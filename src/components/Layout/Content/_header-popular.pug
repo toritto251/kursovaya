@@ -1,0 +1,76 @@
+
+.header-vector2-1
+	.header
+		.container
+			.header__logo
+				a(href="index.html") AIR PRO
+			.header__nav
+				nav.nav
+					ul.nav__list
+						li.nav__item
+							a(href="javascript:void(0)").nav__link авиабилеты
+						li.nav__item
+							a(href="javascript:void(0)").nav__link авиаскидки
+						li.nav__item
+							a(href="javascript:void(0)").nav__link Отели со скидкой 
+						li.nav__item
+							a(href="javascript:void(0)").nav__link Авиа + отель
+						li.nav__item-lang
+							a(href="javascript:void(0)").nav__link-lang EN
+							| / 
+							a(href="javascript:void(0)").nav__link-lang RU
+			.header__form
+				form( method="get")
+					input(placeholder="Введите номер телефона")
+					button(type="tel" name="tel" ).header__btn связаться
+			.row
+				.col.col-3
+					.header__email
+						p
+							| Получайте уведомления об  <br/>
+							| изменении цен на ваш e-mail <br/>
+						form( method="get")
+							input( type="email" placeholder="Введите ваш e-mail")
+							button(type="tel" name="tel" ).header-popular__btn Следить за ценой
+				.col.col-3
+					.header-popular
+						h2 
+							| Популярные акционные <br/>
+							| предложения
+							.header-popular__content
+								img(src="./img/foto01.png")
+								span -75%
+								.header-popular__card
+									h1 Анталья, 
+									p
+										| Вылет из города: Одесса <br/>
+										| 03.09.2018 - 19.09.2018 /
+									h2 2749
+									h4 цена в обе стороны
+									button(type="tel" name="tel" ).card__btn Купить
+				.col.col-3
+					.header-popular
+						.header-popular__content--liccabon
+							img(src="./img/foto02.png")
+							span -85%
+							.header-popular__card--liccabon
+								h1 Лиссабон,
+								p
+									| Вылет из города: Киев <br/>
+									| 11.08.2018 - 29.10.2018 /
+								h2 7076
+								h4 цена в обе стороны
+								button(type="tel" name="tel" ).card__btn Купить
+				.col.col-3
+					.header-popular
+						.header-popular__content--barselona
+							img(src="./img/foto03.png")
+							span -65%
+							.header-popular__card--barselona
+								h1 Барселона,
+								p
+									| Вылет из города: Киев <br/>
+									| 19.12.2018 - 07.01.2019 /
+								h2 2532
+								h4 цена в обе стороны
+								button(type="tel" name="tel" ).card__btn Купить

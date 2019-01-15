@@ -1,0 +1,47 @@
+
+.header-vector01
+	.header
+		.container
+			.header__logo
+				a(href="index.html") AIR PRO
+			.header__nav
+				nav.nav
+					ul.nav__list
+						li.nav__item
+							a(href="offers.html", title="УСЛУГИ").nav__link УСЛУГИ
+						li.nav__item
+							a(href="javascript:void(0)", title="МОИ БРОНИРОВАНИЕ").nav__link МОИ БРОНИРОВАНИЕ
+						li.nav__item
+							a(href="javascript:void(0)", title="РАСПИСАНИЕ РЕЙСОВ").nav__link РАСПИСАНИЕ РЕЙСОВ
+						li.nav__item
+							a(href="javascript:void(0)", title="АКЦИИ").nav__link АКЦИИ
+						li.nav__item-lang
+							a(href="javascript:void(0)", title="EN").nav__link-lang EN
+							| / 
+							a(href="javascript:void(0)", title="RU").nav__link-lang RU
+			.header__form
+				form( method="get")
+					input(placeholder="Введите номер телефона")
+					button(type="tel" name="tel" ).header__btn связаться
+			.header__content
+				h1 Бронируйте сейчас и получайте бесплатные мили
+					p Поиск дешевых авиабилетов
+			.header__avia
+				nav.avia
+					ul.avia__list
+						li.avia__item
+							a(href="javascript:void(0)" autofocus).avia__link.avia__link--active авиабилеты
+						li.avia__item
+							a(href="javascript:void(0)").avia__link авиаскидки
+						li.avia__item
+							a(href="javascript:void(0)").avia__link отели со скидкой
+						li.avia__item
+							a(href="javascript:void(0)").avia__link авиа + отель
+			.row
+				.col.col-10.offset-1
+					.avia__content
+						form(method="get")
+							<input type="radio" name="radio" id="" checked> в обе стороны
+							<input type="radio" name="radio" id="" > в одну сторону
+							<input type="radio" name="radio" id=""> с пересадками
+					.avia__place    

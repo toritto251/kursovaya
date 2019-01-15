@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.vector3{
+    background-image: url('../img/Vector3.png');
+    min-height: 779px;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top: -432px;
+}
+
+.booking{
+    &__content h1{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 24px;
+        color: #333333;
+        margin-top: 220px;
+    }
+    &__info{
+        margin-right: 33px;
+        width: 271px;
+        height: 195px;
+        background: #5AB2AA;
+        border-radius: 4px;
+        float: left;
+        & p{
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            padding: 49px 26px 50px 25px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    &__hotel{
+        width: 341px;
+        height: 195px;
+        background: #C665B2;
+        border-radius: 4px;
+        float: left;
+        padding: 20px 41px 27px 25px;
+        & p{
+            float: left;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            line-height: 24px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+        & span {
+            float: left;
+            text-align: right;
+            margin-left: 20px;
+            line-height: 24px;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+        }
+    }
+    &__search{
+        margin-top: 286px;
+        & p{
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 16px;
+            color: #333333;
+        }
+    }
+    &__btn{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+        background: #57C986;
+        border-radius: 4px;
+        border: none;
+        padding: 15px 28px 15px 29px;
+        cursor: pointer;
+        margin-left: 173px;
+        &:hover{
+            background: rgb(29, 182, 93);
+        }
+        &:focus{
+            color: black;
+        }
+    }
+}

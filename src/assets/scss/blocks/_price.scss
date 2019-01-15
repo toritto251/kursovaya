@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// body{
+//     background-color: blue;
+// }
+
+.vector02{
+    background-image: url('../img/Vector2.png');
+    min-height: 1028px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 40px;
+}
+
+.stock{
+    &__popular{
+        margin-top: 165px;
+        margin-left: 50px;
+            & h2 {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 39px;
+                font-size: 24px;
+                color: #51527E;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            & p{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 26px;
+                font-size: 16px;
+                color: #828282;
+            }
+    }
+    &__fotoes{
+        margin-top: -133px;
+    }
+    &__foto{
+        height: 260px;
+        & img{
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        & span{
+            padding: 7px;
+            background: orange;
+            position: absolute;
+            left: 173px;
+            top: 13px;
+            border-radius: 2px;
+            color: white;
+        }
+        & h1{
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 14px;
+            color: #4F4F4F;
+            padding: 10px;
+            margin-top: 0px;
+            background-color: white;
+            margin-bottom: 0px;
+            width: 225px;
+            margin-top: -4px;
+        }
+        & p {
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 20px;
+            font-size: 12px;
+            color: #828282;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-left: 10px;
+            background-color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding-bottom: 7px;
+            width: 225px;
+        }
+    }
+    &__fotoz{
+        padding-left: 55px;
+         margin-top: -88px;
+            & img{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            & span{
+                padding: 7px;
+                background: orange;
+                position: absolute;
+                left: 230px;
+                top: -74px;
+                border-radius: 2px;
+                color: #fff;
+            }
+            & h1{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 14px;
+                color: #4F4F4F;
+                padding: 10px;
+                margin-top: 0px;
+                background-color: white;
+                margin-bottom: 0px;
+                width: 225px;
+                margin-top: -4px;
+            }
+            & p {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 20px;
+                font-size: 12px;
+                color: #828282;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-left: 10px;
+                background-color: white;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                padding-bottom: 7px;
+                width: 225px;
+            }
+        }
+        &__stokgolm{
+            padding-left: 55px;
+            margin-top: -220px;
+            & img{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            & span{
+                padding: 7px;
+                background: orange;
+                position: absolute;
+                left: 230px;
+                top: -207px;
+                border-radius: 2px;
+                color: #fff;
+            }
+            & h1{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 14px;
+                color: #4F4F4F;
+                padding: 10px;
+                margin-top: 0px;
+                background-color: white;
+                margin-bottom: 0px;
+                width: 225px;
+                margin-top: -4px;
+            }
+            & p {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 20px;
+                font-size: 12px;
+                color: #828282;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-left: 10px;
+                background-color: white;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                padding-bottom: 7px;
+                width: 225px;
+            }
+        }
+        &__paris-gran{
+            & img{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            & span{
+                padding: 7px;
+                background: orange;
+                position: absolute;
+                left: 173px;
+                top: -122px;
+                border-radius: 2px;
+                color: #fff;
+            }
+            & h1{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 14px;
+                color: #4F4F4F;
+                padding: 10px;
+                margin-top: 0px;
+                background-color: white;
+                margin-bottom: 0px;
+                width: 225px;
+                margin-top: -4px;
+            }
+            & p {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 20px;
+                font-size: 12px;
+                color: #828282;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-left: 10px;
+                background-color: white;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                padding-bottom: 7px;
+                width: 225px;
+            }
+        }
+        &__dybay{
+            margin-top: 61px;
+            padding-left: 55px;
+            & img{
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            & span{
+                padding: 7px;
+                background: orange;
+                position: absolute;
+                left: 231px;
+                top: -60px;
+                border-radius: 2px;
+                color: #fff;
+            }
+            & h1{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 14px;
+                color: #4F4F4F;
+                padding: 10px;
+                margin-top: 0px;
+                background-color: white;
+                margin-bottom: 0px;
+                width: 225px;
+                margin-top: -4px;
+            }
+            & p {
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 20px;
+                font-size: 12px;
+                color: #828282;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding-left: 10px;
+                background-color: white;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                padding-bottom: 7px;
+                width: 225px;
+            }
+        }
+    }

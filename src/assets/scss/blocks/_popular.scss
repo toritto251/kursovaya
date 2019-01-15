@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.vector4{
+    background-image: url('../img/Vector4.png');
+    min-height: 1200px;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: -104px;
+}
+
+// body{
+//     background: green;
+// }
+
+.popular{
+    &__info{
+        margin-top: 393px;
+        & h1{
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            display: flex;
+            justify-content: flex-end;
+        }
+        & p{
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 16px;
+            text-align: right;
+            color: #FCFCFC;
+        }
+    }
+    &__btn{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        text-align: right;
+        text-transform: capitalize;
+        color: #FAFAFA;
+        padding: 15px 26px 15px 27px;
+        background: #57C986;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        margin-left: 209px;
+        margin-top: 7px;
+        &:hover{
+            background: rgb(27, 165, 84);
+            border-radius: 8px;
+        }
+    }
+    &__content{
+        padding-top: 233px;
+        & h1{
+            position: absolute;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            top: 237px;
+            left: 34px;
+        }
+        & p {
+            position: absolute;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            left: 34px;
+            top: 249px;
+        }
+    }
+    &__content2{
+        margin-top: -60px;
+        & h1{
+            position: absolute;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            top: -55px;
+            left: 34px;
+        }
+        & p {
+            position: absolute;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            left: 34px;
+            top: -42px;
+        }
+    }
+    &__content3{
+            margin-top: 26px;
+        & h1{
+            position: absolute;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 14px;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            top: 30px;
+            left: 34px;
+        }
+        & p {
+            position: absolute;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 14px;
+            color: #FFFFFF;
+            left: 34px;
+            top: 41px;
+        }
+    }
+}

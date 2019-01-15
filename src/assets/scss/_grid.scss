@@ -1,0 +1,109 @@
+/* main styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: $container-width-xlarge;
+    padding: 0 $gutter/2;
+    margin: 0 auto;
+    width: 100%;
+    @media screen and (max-width: $xlarge) {
+        max-width: $container-width-large;
+    }
+    @media screen and (max-width: $large) {
+        max-width: $container-width-medium;
+    }
+    @media screen and (max-width: $medium) {
+        max-width: $container-width-small;
+    }
+    @media screen and (max-width: $small) {
+        max-width: none;
+    }
+}
+.row {
+    margin: 0 (-$gutter/2);
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row.no-gutters > .col,
+.row.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.col {
+    padding: 0 $gutter/2;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+
+@for $i from 1 to $num-cols + 1 {
+    .col-#{$i} {
+        flex: 0 0 (100% / $num-cols * $i);
+        max-width: (100% / $num-cols * $i);
+    }
+}
+@for $i from 1 to $num-cols {
+    .offset-#{$i} {
+        margin-left: (100% / $num-cols * $i);
+    }
+}
+
+@media screen and (max-width: $xlarge) {
+    @for $i from 1 to $num-cols + 1 {
+        .col-xl-#{$i} {
+            flex: 0 0 (100% / $num-cols * $i);
+            max-width: (100% / $num-cols * $i);
+        }
+    }
+    @for $i from 1 to $num-cols + 1 {
+        .offset-xl-#{$i} {
+            margin-left: (100% / $num-cols * $i);
+        }
+    }
+}
+@media screen and (max-width: $large) {
+    @for $i from 1 to $num-cols + 1 {
+        .col-lg-#{$i} {
+            flex: 0 0 (100% / $num-cols * $i);
+            max-width: (100% / $num-cols * $i);
+        }
+    }
+    @for $i from 1 to $num-cols + 1 {
+        .offset-lg-#{$i} {
+            margin-left: (100% / $num-cols * $i);
+        }
+    }
+}
+@media screen and (max-width: $medium) {
+    @for $i from 1 to $num-cols + 1 {
+        .col-md-#{$i} {
+            flex: 0 0 (100% / $num-cols * $i);
+            max-width: (100% / $num-cols * $i);
+        }
+    }
+    @for $i from 1 to $num-cols + 1 {
+        .offset-md-#{$i} {
+            margin-left: (100% / $num-cols * $i);
+        }
+    }
+}
+@media screen and (max-width: $small) {
+    @for $i from 1 to $num-cols + 1 {
+        .col-sm-#{$i} {
+            flex: 0 0 (100% / $num-cols * $i);
+            max-width: (100% / $num-cols * $i);
+        }
+    }
+    @for $i from 1 to $num-cols + 1 {
+        .offset-sm-#{$i} {
+            margin-left: (100% / $num-cols * $i);
+        }
+    }
+}

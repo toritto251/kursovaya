@@ -1,0 +1,43 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: $base-font;
+}
+
+.content {
+  flex: 1 0;
+}
+
+.container {
+  width: 1293px;
+  padding: 0 15px;
+
+  @include small {
+    margin: 0 auto;
+    width: 540px;
+  }
+
+  @include medium {
+    width: 720px;
+  }
+
+  @include large {
+    width: 960px;
+  }
+
+  @include extra {
+    width: 1140px;
+  }
+}
