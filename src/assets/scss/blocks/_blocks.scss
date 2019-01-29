@@ -1,4 +1,3 @@
-// BLOCKS
 @import "./components/Layout/Header/_header.scss";
 @import "./src/assets/scss/blocks/_price.scss";
 @import "./src/assets/scss/blocks/_booking.scss";
@@ -7,10 +6,8 @@
 @import "./src/assets/scss/blocks/_subscribe.scss";
 @import "./components/Layout/Footer/_footer.scss";
 @import "./src/assets/scss/blocks/_header-popular.scss";
-@import "./src/assets/scss/blocks/_offers.scss";
+@import "./src/assets/scss/blocks/_vectors.scss";
 @import "./src/assets/scss/blocks/_buttons.scss";
 @import "./src/assets/scss/blocks/_reviews.scss";
-
-// SLICK
-@import "./plugins/slick/slick.scss";
-@import "./plugins/slick/slick-theme.scss";
+@import "./src/assets/scss/blocks/_header-flights.scss";
+@import "./src/assets/scss/blocks/_include-small.scss";

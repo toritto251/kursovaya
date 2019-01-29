@@ -6,13 +6,17 @@
 				a(href="index.html") AIR PRO
 			.header__nav
 				nav.nav
-					ul.nav__list
+					span#trigger.trigger
+									i
+									i
+									i
+					ul.nav__list#menu.menu
 						li.nav__item
 							a(href="offers.html", title="УСЛУГИ").nav__link УСЛУГИ
 						li.nav__item
 							a(href="javascript:void(0)", title="МОИ БРОНИРОВАНИЕ").nav__link МОИ БРОНИРОВАНИЕ
 						li.nav__item
-							a(href="javascript:void(0)", title="РАСПИСАНИЕ РЕЙСОВ").nav__link РАСПИСАНИЕ РЕЙСОВ
+							a(href="flights.html", title="РАСПИСАНИЕ РЕЙСОВ").nav__link РАСПИСАНИЕ РЕЙСОВ
 						li.nav__item
 							a(href="javascript:void(0)", title="АКЦИИ").nav__link АКЦИИ
 						li.nav__item-lang
@@ -28,9 +32,10 @@
 					p Поиск дешевых авиабилетов
 			.header__avia
 				nav.avia
+				#js-active-focus
 					ul.avia__list
 						li.avia__item
-							a(href="javascript:void(0)" autofocus).avia__link.avia__link--active авиабилеты
+							a(href="javascript:void(0)").avia__link.avia__link--active авиабилеты
 						li.avia__item
 							a(href="javascript:void(0)").avia__link авиаскидки
 						li.avia__item
@@ -40,8 +45,57 @@
 			.row
 				.col.col-10.offset-1
 					.avia__content
-						form(method="get")
-							<input type="radio" name="radio" id="" checked> в обе стороны
-							<input type="radio" name="radio" id="" > в одну сторону
-							<input type="radio" name="radio" id=""> с пересадками
-					.avia__place    
+						.avia__radio
+							form(method="get")
+								<input type="radio" name="radio" id="" checked> в обе стороны
+								<input type="radio" name="radio" id="" > в одну сторону
+								<input type="radio" name="radio" id=""> с пересадками
+						.avia__place
+							.avia__whence
+								h3 Откуда
+								img(src="./img/plane01.png", alt="")
+								form(method="get")
+									input(type="text" placeholder="Киев")
+								p Аэропорт Борисполь ... (KBP)
+							.avia__where
+								h3 куда
+								img(src="./img/plane02.png", alt="")
+								form(method="get")
+									input(type="text" placeholder="Введите название города")
+								p Аэропорт Борисполь ... (KBP)
+							.avia__date-there
+								h3 туда
+								img(src="./img/calendar.png", alt="")
+								form(method="get")
+									input#datepicker(type='text' placeholder='06/05/2019')
+								p Даты
+							.avia__date-back
+								h3 обратно
+								img(src="./img/calendar.png", alt="")
+								form(method="get")
+									input#datepicker(type='text' placeholder='06/05/2019')
+								p Даты
+							.avia__class
+								h3 eco
+									img(src="./img/chel.png", alt="")
+									select(name="class" ) 
+										option(value="1" selected) 1
+										option(value="2") 2
+										option(value="3") 3
+										option(value="5") 4
+										option(value="5") 5
+								p Класс
+							.avia__button
+								input(type="checkbox", name="sales" checked)
+								label Отели со скидкой
+								form( method="get")
+									button(type="text" name="search" ).aviaes__btn поиск							
+						.avia__check
+							input(type="checkbox", name="low-cost") 
+							label Low cost цены  
+							input(type="checkbox", name="extra-baggage")
+							label Доп. багаж
+							input(type="checkbox", name="insurance")
+							label Страховой полис
+							input(type="checkbox", name="arend-car")
+							label Аренда авто

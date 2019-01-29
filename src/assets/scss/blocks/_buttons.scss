@@ -7,8 +7,9 @@
 // }
 
 .buttons{
-    height: 448px;
+    min-height: 448px;
     &__years{
+        margin-top: 23px;
         & button{
             margin-top: 60px;
             width: 100%;
@@ -29,7 +30,7 @@
                 & img{
                     position: absolute;
                     left: 100px;
-                    top: 85px;
+                    top: 108px;
                     left: 205px;
                 }
             }
@@ -44,6 +45,11 @@
         border-radius: 4px;
         border: none;
         margin-top: 39px;
+        margin-bottom: 60px;
+        &--margin{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
         & h1{
             font-family: 'Open Sans', sans-serif;
             font-style: normal;
@@ -75,7 +81,7 @@
                 padding: 14px 36px 14px 37px;
                 cursor: pointer;
                 margin-right: 20px;
-                margin-top: -27px;
+                margin-top: -34px;
             }
             & button:hover{
                 background: rgb(55, 224, 125);

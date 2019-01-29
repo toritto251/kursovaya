@@ -8,17 +8,17 @@
 				nav.nav
 					ul.nav__list
 						li.nav__item
-							a(href="javascript:void(0)").nav__link авиабилеты
+							a(href="flights.html", title="авиабилеты").nav__link авиабилеты
 						li.nav__item
-							a(href="javascript:void(0)").nav__link авиаскидки
+							a(href="javascript:void(0)", title="авиаскидки").nav__link авиаскидки
 						li.nav__item
-							a(href="javascript:void(0)").nav__link Отели со скидкой 
+							a(href="javascript:void(0)", title="Отели со скидкой ").nav__link Отели со скидкой 
 						li.nav__item
-							a(href="javascript:void(0)").nav__link Авиа + отель
+							a(href="javascript:void(0)", title="Авиа + отель").nav__link Авиа + отель
 						li.nav__item-lang
-							a(href="javascript:void(0)").nav__link-lang EN
+							a(href="javascript:void(0)", title="EN").nav__link-lang EN
 							| / 
-							a(href="javascript:void(0)").nav__link-lang RU
+							a(href="javascript:void(0)", title="RU").nav__link-lang RU
 			.header__form
 				form( method="get")
 					input(placeholder="Введите номер телефона")
@@ -32,45 +32,250 @@
 						form( method="get")
 							input( type="email" placeholder="Введите ваш e-mail")
 							button(type="tel" name="tel" ).header-popular__btn Следить за ценой
+					.offer__info
+						h3 Фильтры
+						input(type="checkbox", name="direct-flights") 
+						label Только прямые рейсы <br/>
+						input(type="checkbox", name="weekend")
+						label Только уик-энд <br/>
+						input(type="checkbox", name="immediate-3months")
+						label Вылет  в ближайшие 3 месяца <br/>
+						input(type="checkbox", name="immediate-6months")
+						label Вылет  в ближайшие 6 месяцев <br/>
+						hr
+						h3.offer__info--h3-margin Цены
+						p
+							#slider-range(style='background: #89D8F1; height:5px;')
+							label(for='amount')
+							input#amount(type='text', readonly='', style='border:0; padding-left: 41px; color:#f6931f; font-weight:bold;margin-top:10px;')
+						hr
+						h3.offer__info--h3-margin Страна вылета
+						input(type="checkbox", name="ukraine" checked)
+						label Украина <br/>
+						input(type="checkbox", name="poland")
+						label Польша <br/>
+						input(type="checkbox", name="moldova")
+						label Молдова <br/>
+						input(type="checkbox", name="russia" disabled)
+						label Россия <br/>
+						hr
+						h3.offer__info--h3-margin Город вылета
+						input(type="checkbox", name="kiev")
+						label Киев <br/>
+						input(type="checkbox", name="odessa")
+						label Одесса <br/>
+						input(type="checkbox", name="Lviv")
+						label Львов <br/>
+						input(type="checkbox", name="zaporizhia")
+						label Запорожье <br/>
+						input(type="checkbox", name="kharkov")
+						label Харьков <br/>
+						hr
+						#accordion.accordion
+							h3 Длительность поездки
+							div.accordion--height
+								input(type="checkbox", name=">3")
+								label Меньше 3 часов <br/>
+								input(type="checkbox", name="<3")
+								label Больше 3 часов <br/>
+								input(type="checkbox", name="<10")
+								label Больше 10 часов <br/>
+								input(type="checkbox", name="<15")
+								label Больше 15 часов <br/>
+							h3 Месяц вылета
+							div
+								input(type="checkbox", name="January")
+								label Январь <br/>
+								input(type="checkbox", name="February")
+								label Февраль <br/>
+								input(type="checkbox", name="March")
+								label Март <br/>
+								input(type="checkbox", name="April")
+								label Апрель <br/>
+								input(type="checkbox", name="May")
+								label Май <br/>
+								input(type="checkbox", name="June")
+								label Июнь <br/>
+								input(type="checkbox", name="July")
+								label Июль <br/>
+								input(type="checkbox", name="August")
+								label Август <br/>
+								input(type="checkbox", name="September")
+								label Сентябрь <br/>
+								input(type="checkbox", name="October")
+								label Октябрь <br/>
+								input(type="checkbox", name="November")
+								label Ноябрь <br/>
+								input(type="checkbox", name="December")
+								label Декабрь <br/>
+							h3 Авиакомпании
+							div.accordion--height
+								input(type="checkbox", name="Qatar-air")
+								label Qatar Airways <br/>
+								input(type="checkbox", name="Emirates")
+								label Emirates <br/>
+								input(type="checkbox", name="Lufthansa")
+								label Lufthansa <br/>
+								input(type="checkbox", name="Turkish-air")
+								label Turkish Airlines <br/>
+							h3 Скидка
+							div.accordion--height
+								input(type="checkbox", name="10%")
+								label 0 - 10% <br/>
+								input(type="checkbox", name="25%")
+								label 11-25% <br/>
+								input(type="checkbox", name="50%")
+								label 26-50% <br/>
+								input(type="checkbox", name="99%")
+								label 51-99% <br/>
+							h3 Виза 
+							div.accordion--height
+								input(type="checkbox", name="visa-yes")
+								label Да <br/>
+								input(type="checkbox", name="visa-not")
+								label Нет <br/>
+							h3 Способ оплаты  
+							div.accordion--height
+								input(type="checkbox", name="In-cash")
+								label Налиными <br/>
+								input(type="checkbox", name="By-card")
+								label Картой <br/>
 				.col.col-3
-					.header-popular
+					.offers
 						h2 
 							| Популярные акционные <br/>
 							| предложения
-							.header-popular__content
-								img(src="./img/foto01.png")
-								span -75%
-								.header-popular__card
-									h1 Анталья, 
-									p
-										| Вылет из города: Одесса <br/>
-										| 03.09.2018 - 19.09.2018 /
-									h2 2749
-									h4 цена в обе стороны
-									button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--antalia
+						img(src="./img/foto01.png")
+						span -75%
+						.offers__card
+							h1 Анталья, 
+							p
+								| Вылет из города: Одесса <br/>
+								| 03.09.2018 - 19.09.2018 /
+							h2 2749
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--paris
+						img(src="./img/foto04.png")
+						span -30%
+						.offers__card.offers__card--paris
+							h1 Париж,
+							p
+								| Вылет из города: Киев <br/>
+								| 23.09.2018 - 02.10.2018 /
+							h2 8836
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--berlin
+						img(src="./img/foto08.png")
+						span -33%
+						.offers__card.offers__card--berlin
+							h1 Берлин,
+							p
+								| Вылет из города: Львов <br/>
+								| 15.06.2018 - 29.10.2018 /
+							h2 2898
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--rim
+						img(src="./img/foto10.png")
+						span -67%
+						.offers__card.offers__card--rim
+							h1 Рим,
+							p
+								| Вылет из города: Одесса <br/>
+								| 11.10.2018 - 25.10.2018 /
+							h2 4695
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
 				.col.col-3
-					.header-popular
-						.header-popular__content--liccabon
-							img(src="./img/foto02.png")
-							span -85%
-							.header-popular__card--liccabon
-								h1 Лиссабон,
-								p
-									| Вылет из города: Киев <br/>
-									| 11.08.2018 - 29.10.2018 /
-								h2 7076
-								h4 цена в обе стороны
-								button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--liccabon
+						img(src="./img/foto02.png")
+						span -85%
+						.offers__card.offers__card--liccabon
+							h1 Лиссабон, 
+							p
+								| Вылет из города: Киев <br/>
+								| 11.08.2018 - 29.10.2018 /
+							h2 7076
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--stokgolm
+						img(src="./img/foto05.png")
+						span -87%
+						.offers__card.offers__card--stokgolm
+							h1 Стокгольм,
+							p
+								| Вылет из города: Киев <br/>
+								| 03.12.2018 - 22.12.2018 /
+							h2 10 076
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--dybai
+						img(src="./img/foto07.png")
+						span -45%
+						.offers__card.offers__card--dybai
+							h1 Дубай, 
+							p
+								| Вылет из города: Одесса <br/>
+								| 13.10.2018 - 23.10.2018 /
+							h2 5650
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--grace
+						img(src="./img/foto11.png")
+						span -37%
+						.offers__card.offers__card--grace
+							h1 Санторини, 
+							p
+								| Вылет из города: Одесса <br/>
+								| 07.07.2018 - 14.07.2018 /
+							h2 6890
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
 				.col.col-3
-					.header-popular
-						.header-popular__content--barselona
-							img(src="./img/foto03.png")
-							span -65%
-							.header-popular__card--barselona
-								h1 Барселона,
-								p
-									| Вылет из города: Киев <br/>
-									| 19.12.2018 - 07.01.2019 /
-								h2 2532
-								h4 цена в обе стороны
-								button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--barselona
+						img(src="./img/foto03.png")
+						span -65%
+						.offers__card.offers__card--barselona
+							h1 Барселона,
+							p
+								| Вылет из города: Киев <br/>
+								| 19.12.2018 - 07.01.2019 /
+							h2 2532
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--poland
+						img(src="./img/foto06.png")
+						span -33%
+						.offers__card.offers__card--poland
+							h1 Гданьск,
+							p
+								| Вылет из города: Киев <br/>
+								| 24.06.2018 - 05.07.2019 /
+							h2 2532
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--london
+						img(src="./img/foto09.png")
+						span -37%
+						.offers__card.offers__card--london
+							h1 Лондон, 
+							p
+								| Вылет из города: Одесса <br/>
+								| 07.06.2018 - 10.06.2018 /
+							h2 2872
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить
+					.offers__content.offers__content--taxi
+						img(src="./img/foto12.png")
+						span -42%
+						.offers__card.offers__card--taxi
+							h1 Дубровник,  
+							p
+								| Вылет из города: Одесса <br/>
+								| 05.09.2018 - 23.09.2018 /
+							h2 10 890
+							h4 цена в обе стороны
+							button(type="tel" name="tel" ).card__btn Купить

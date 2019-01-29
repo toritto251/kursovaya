@@ -30,12 +30,71 @@
 }
 
 
+.review {
+    border: 1px solid rgba(0,0,0,.12);
+    padding: 29px 24px;
+    background: white;
+    box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    min-height: 320px;
+    max-width: 400px;
+    &__star{
+        float: left;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 16px;
+        color: #333333;
+        padding-left: 20px;
+        & h2{
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+    }
+}
+.review__brand {
+    overflow: hidden;
+    float: left;
+    margin-left: 40px;
+}
+.review__brand img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.review__text {
+    & p{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 30px;
+        font-size: 14px;
+        color: #4F4F4F;
+        margin-top: 117px;
+        margin-left: 40px;
+        margin-bottom: 35px;
+        
+    }
+}
+.review__date{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #4F4F4F;
+    margin-left: 40px;
+}
 .slider-wrap {
     width: 100% !important;
     max-width: 100% !important;
     /* overflow: hidden; */
     min-height: 250px;
-    padding: 39px 21px 0;
+    max-height: 372px;
+    padding: 63px 21px 0;
+    padding-left: 0px;
 }
 
 .slider {
@@ -43,10 +102,11 @@
     width: 100%;
 }
 
-.slide {
-    padding: 0 21px;
-    outline: none;
+.slide{
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
 
 .slick-arrow {
     -moz-osx-font-smoothing: grayscale;
@@ -66,13 +126,15 @@
 .slick-arrow:before {
     font-family: inherit;
     font-size: 50px;
-    color: white;
+    color: green;
+    width: 31px;
+    height: 19px;
 }
 
 
 .slick-next {
-    right: -29px;
-    top: 182px;
+    right: 44px;
+    top: 392px;
 }
 
 .slick-next:before {
@@ -80,23 +142,10 @@
 }
 
 .slick-prev {
-    right: 100px;
-    top: 182px;
+    left: 1134px;
+    top: 392px;
 }
 
 .slick-prev:before {
     content: "\f104";
-}
-
-
-.slider__width {
-    margin-left: -57px;
-    margin-top: -7px;
-    width: 112%;
-}
-
-.font {
-    padding: 0px 0px;
-
-    width: 122%;
 }

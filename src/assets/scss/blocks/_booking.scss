@@ -69,6 +69,10 @@
             text-transform: capitalize;
             color: #FFFFFF;
         }
+        & span:hover{
+            cursor: pointer;
+            color: rgb(228, 197, 197);
+        }
     }
     &__search{
         margin-top: 286px;

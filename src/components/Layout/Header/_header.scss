@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans:300,400,600');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-$font_0: Open Sans;
 
 
 
@@ -171,10 +170,16 @@ $font_0: Open Sans;
     &__content{
         background-color: white;
         box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        height: 199px;
+        & input{
+            margin-left: 50px;
+        }
+    }
+    &__radio{
+        background-color: white;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px;
-        display: flex;
-        justify-content: flex-start;
         margin-top: -12px;
         font-family: 'Lato', sans-serif;
         font-style: normal;
@@ -190,20 +195,327 @@ $font_0: Open Sans;
     }
     &__place{
         display: flex;
-        justify-content: flex-start;
-        background-color: white;
-            & p{
-                margin-top: 18px;
-                margin-left: 50px;
+    }
+    &__whence{
+        margin-top: 36px;
+        height: 52px;
+        width: 252px;
+        border: 1px solid #E0E0E0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        margin-left: 40px;
+        & h3{
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #50546E;
+            margin-top: -18px;
+        }
+        & img{
+            padding-left: 14px;
+        }
+        & form{
+            margin-top: -21px;
+            & input{
+                margin-left: 38px;
+                text-transform: capitalize;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 16px;
+                border: none;
+                font-family: 'Open Sans', sans-serif;
+                color: #51527E;
+                &::placeholder{
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    line-height: normal;
+                    font-size: 16px;
+                    border: none;
+                    font-family: 'Open Sans', sans-serif;
+                    color: #51527E;
+                }
             }
-            &--from{
-                border-radius: 10px;
-                width: 200px;
-                height: 100px;
-                background: green;
+        }
+        & p{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            margin-left: 38px;
+            margin-top: 2px;
+            color: #50546e;
+        }
+    }
+    &__where{
+        margin-top: 36px;
+        height: 52px;
+        width: 252px;
+        border: 1px solid #E0E0E0;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        margin-left: -1px;
+        & h3{
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #50546E;
+            margin-top: -18px;
+        }
+        & img{
+            padding-left: 14px;
+        }
+        & form{
+            margin-top: -21px;
+            & input{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 16px;
+                color: #B5B7C2;
+                border: none;
+                margin-left: 36px;
+                margin-top: -3px;
+                width: 212px;
+                &::placeholder{
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    font-size: 16px;
+                    color: #B5B7C2;
+                }
             }
+        }
+        & p{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            margin-left: 38px;
+            margin-top: 2px;
+            color: #50546e;
+        }
+    }
+    &__date-there{
+        width: 110px;
+        border: 1px solid #E0E0E0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        margin-top: 36px;
+        margin-left: 9px;
+        & h3{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #50546e;
+            margin-top: -18px;
+        }
+        & form{
+            margin-top: -22px;
+            margin-left: -24px;
+            & input{
+                width: 79px;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #A4ABB8;
+                cursor: pointer;
+                &::placeholder{
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    color: #A4ABB8;
+                }
+            }
+        }
+        & img{
+            padding-left: 6px;
+        }
+        & p{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            text-transform: capitalize;
+            color: #50546E;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 32px;
+        }
+    }
+    &__date-back{
+        width: 110px;
+        border: 1px solid #E0E0E0;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        margin-top: 36px;
+        margin-left: -1px;
+        & h3{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #50546e;
+            margin-top: -18px;
+        }
+        & form{
+            margin-top: -22px;
+            margin-left: -24px;
+            & input{
+                width: 79px;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: #A4ABB8;
+                cursor: pointer;
+                &::placeholder{
+                    font-family: 'Open Sans', sans-serif;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    color: #A4ABB8;
+                }
+            }
+        }
+        & img{
+            padding-left: 6px;
+        }
+        & p{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            text-transform: capitalize;
+            color: #50546E;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 32px;
+        }
+    }
+    &__class{
+        width: 98px;
+        border-radius: 4px;
+        border: 1px solid #E0E0E0;
+        margin-left: 9px;
+        margin-top: 36px;
+        position: relative;
+        & h3{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            line-height: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #50546E;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 6px 0px 0px 10px;
+        }
+        & p{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            color: #50546E;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding: 2px 0px 0px 10px;
+        }
+        & img{
+            position: absolute;
+            left: 52px;
+            top: 14px;
+        }
+        & select{
+            position: absolute;
+            border: none;
+            padding-bottom: 12px;
+            top: 5px;
+            left: 63px;
+        }
+    }
+    &__button{
+        width: 122px;
+        margin-top: 12px;
+        margin-left: 9px;
+        & button{
+            width: 122px;
+            cursor: pointer;
+            padding: 17px 35px 18px 35px;
+            border-radius: 4px;
+            background: #57C986;
+            border: none;
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 3px;
+        }
+        & button:hover{
+            background: rgb(73, 240, 142);
+            border-radius: 4px;
+        }
+        & button:focus{
+            background: rgb(8, 218, 96);
+            border-radius: 4px;
+        }
+        & label{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            color: #50546E;
+            font-weight: 400;
+            margin-left: -1px;
+        }
+        & input{
+            margin-left: 4px;
+        }
+    }
+    &__check{
+        & label{
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 14px;
+            text-align: center;
+            color: #838EA2;
+        }
+        & input{
+            margin-top: 30px;
+        }
     }
 }
-.avia__content input{
-    margin-left: 50px;
-}
+
+

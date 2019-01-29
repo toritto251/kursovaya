@@ -1,0 +1,393 @@
+
+.vector3-1
+    .container
+        .header__logo.header__logo--black
+            a(href="index.html") AIR PRO
+        .header__nav
+            nav.nav
+                ul.nav__list
+                    li.nav__item
+                        a(href="offers.html", title="УСЛУГИ").nav__link.nav__link--black УСЛУГИ
+                    li.nav__item
+                        a(href="javascript:void(0)", title="МОИ БРОНИРОВАНИЕ").nav__link.nav__link--black МОИ БРОНИРОВАНИЕ
+                    li.nav__item
+                        a(href="javascript:void(0)", title="РАСПИСАНИЕ РЕЙСОВ").nav__link.nav__link--black РАСПИСАНИЕ РЕЙСОВ
+                    li.nav__item
+                        a(href="javascript:void(0)", title="АКЦИИ").nav__link.nav__link--black АКЦИИ
+                    li.nav__item-lang.nav__link--lang
+                        a(href="javascript:void(0)", title="EN").nav__link-lang.nav__link--lang EN
+                        | / 
+                        a(href="javascript:void(0)", title="RU").nav__link-lang RU
+        .header__form
+            form( method="get")
+                input(placeholder="Введите номер телефона")
+                button(type="tel" name="tel" ).header__btn связаться
+        .avia__tablo
+        .row
+            .col.col-3 
+                .header__email
+                    p
+                        | Получайте уведомления об  <br/>
+                        | изменении цен на ваш e-mail <br/>
+                    form( method="get")
+                        input( type="email" placeholder="Введите ваш e-mail")
+                        button(type="tel" name="tel" ).header-popular__btn Следить за ценой
+                .offer__info
+                    h3 Фильтры
+                    input(type="checkbox", name="Only-direct-flights") 
+                    label Только прямые рейсы <br/>
+                    input(type="checkbox", name="Only-with-luggage")
+                    label Только с багажом <br/>
+                    hr
+                    h3.offer__info--h3-margin Багаж
+                    input(type="checkbox", name="all-luggage" checked)
+                    label Все <br/>
+                    input(type="checkbox", name="Luggage-not-included" checked)
+                    label Багаж не включен <br/>
+                    input(type="checkbox", name="Luggage-included" checked)
+                    label Багаж включен <br/>
+                    hr
+                    h3.offer__info--h3-margin Количество пересадок
+                    input(type="checkbox", name="all-transplants" checked)
+                    label Все <br/>
+                    input(type="checkbox", name="Direct-flights" checked)
+                    label Прямые рейсы <br/>
+                    input(type="checkbox", name="1-transfer" checked)
+                    label 1 пересадка <br/>
+                    input(type="checkbox", name="2-or-more-transfer" checked)
+                    label 2 и более <br/>
+                    hr
+                    #accordion  
+            .col.col-9  
+                .flights <!-- KYIV-VENA -->
+                    h1 Прямые рейсы
+                .flights__content
+                    .flights__company
+                        h2 Бизнес-класс
+                        img(src="./img/MAY.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 09:55
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 3 ч 45 мин
+                        img(src="./img/button.png", alt="")
+                    .flights__info-finish
+                        h1 12:40
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LH - 1163
+                .flights__content
+                    .flights__company.flights__company--margin
+                        h2 Бизнес-класс
+                        img(src="./img/MAY.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 13:30
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 3 ч 30 мин
+                        img(src="./img/button.png", alt="")
+                    .flights__info-finish
+                        h1 18:00 
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс x21 - 63c
+                .flights__byuing
+                    p 12431
+                    button(type="submit" name="buy-ticket" ).flights__btn Купить
+                .flights <!-- KYIV-MYNHEN-VENA -->
+                    h2 рейсы с пересадками
+                .flights__content
+                    .flights__company
+                        h2 Бизнес-класс
+                        img(src="./img/MAY.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 10:20
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 17 ч 10 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3 Мюнхен  MUC
+                    .flights__info-finish
+                        p Ту - 124
+                        h3 07:00 
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LH - 1163c
+                .flights__content
+                    .flights__company.flights__company--margin
+                        h2 Бизнес-класс
+                        img(src="./img/MAY.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 08:05
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 13 ч 10 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3 Мюнхен  MUC
+                    .flights__info-finish.flights__info-finish--margin-top
+                        p Ту - 124
+                        h3 13:30 
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс x21 - 63c
+                .flights__byuing
+                    p 19905
+                    button(type="submit" name="buy-ticket" ).flights__btn Купить
+                .flights  <!-- KYIV-ZYRIH-VENA -->
+                .flights__content.flights__content--margin
+                    .flights__company.flights__company--img
+                        h2 Бизнес-класс
+                        img(src="./img/cap-avia.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 08:30
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 17 ч 10 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3  Цюрих  ZRH
+                    .flights__info-finish
+                        p Ту - 124
+                        h3 04:00 
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LH - 1163c
+                .flights__content
+                    .flights__company.flights__company--img
+                        h2 Бизнес-класс
+                        img(src="./img/cap-avia.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 19:20
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 15 ч 40 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3 Цюрих  ZRH
+                    .flights__info-finish.flights__info-finish--margin-top
+                        p Ту - 124
+                        h3 15:30 
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс x21 - 63c
+                .flights__byuing
+                    p 23485
+                    button(type="submit" name="buy-ticket" ).flights__btn Купить
+                .buttons__hotel.buttons__hotel--margin
+                    h1 Забронируйте отели со скидкой до 70%
+                    p Бронируйте сейчас - платите при заезде
+                        button(type="submit" name="new-hotels" ).new-hotels__btn Искать отели
+                .flights  <!-- KYIV-MYNHEN-VENA -->
+                .flights__content.flights__content--margin
+                    .flights__company
+                        h2 Бизнес-класс
+                        img(src="./img/emirates.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 10:20
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 17 ч 10 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3  Мюнхен  MUC
+                    .flights__info-finish
+                        p Ту - 124
+                        h3 07:00 
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LH - 1163c
+                .flights__content
+                    .flights__company
+                        h2 Бизнес-класс
+                        img(src="./img/emirates.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 08:05
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 13 ч 10 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3 Мюнхен  MUC
+                    .flights__info-finish.flights__info-finish--margin-top
+                        p Ту - 124
+                        h3 13:30 
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс x21 - 63c
+                .flights__byuing
+                    p 22903
+                    button(type="submit" name="buy-ticket" ).flights__btn Купить
+                .flights  <!-- KYIV-PARIS-VENA -->
+                .flights__content.flights__content--margin
+                    .flights__company.flights__company--under-ad
+                        h2 Бизнес-класс
+                        img(src="./img/6.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 13:20
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 14 ч 25 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3  Париж  FRA
+                    .flights__info-finish
+                        p Ту - 124
+                        h3 06:30
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LH - 1163c
+                .flights__content
+                    .flights__company.flights__company--under-ad.flights__company--margin
+                        h2 Бизнес-класс
+                        img(src="./img/6.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 05:30
+                        span 26 мая 2018
+                        h2 Барселона BCN
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 16 ч 20 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3 Париж  FRA
+                    .flights__info-finish.flights__info-finish--margin-top
+                        p Ту - 124
+                        h3 23:30  
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс x21 - 63c
+                .flights__byuing
+                    p 29894
+                    button(type="submit" name="buy-ticket" ).flights__btn Купить
+                .flights__ad
+                    p на правах рекламы
+                    img(src="./img/ad.png", alt="")
+                    .flights__ad--info
+                        h1 Закажи карту для путешествий 
+                        h2 Получи страховку бесплатно
+                        span  idea.me
+                    .flights__ad--watch
+                        span cмотреть
+                .flights  <!-- KYIV-MYNHEN-VENA -->
+                .flights__content.flights__content--margin
+                    .flights__company
+                        h2 Бизнес-класс
+                        img(src="./img/emirates.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 11:20
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 17 ч 10 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3  Мюнхен  MUC
+                    .flights__info-finish
+                        p Ту - 124
+                        h3 04:50 
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LH - 1163c
+                .flights__content
+                    .flights__company
+                        h2 Бизнес-класс
+                        img(src="./img/emirates.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 08:40
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 13 ч 10 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3 Мюнхен  MUC
+                    .flights__info-finish.flights__info-finish--margin-top
+                        p Ту - 124
+                        h3 13:30 
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс x21 - 63c
+                .flights__byuing
+                    p 22903
+                    button(type="submit" name="buy-ticket" ).flights__btn Купить
+                .flights  <!-- KYIV-PARIS-VENA -->
+                .flights__content.flights__content--margin
+                    .flights__company.flights__company--under-ad
+                        h2 Бизнес-класс
+                        img(src="./img/6.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 13:20
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 14 ч 25 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3  Париж  FRA
+                    .flights__info-finish
+                        p Ту - 124
+                        h3 06:30
+                        span 26 мая 2018
+                        h2 Вена  VIE
+                        span Рейс LH - 1163c
+                .flights__content
+                    .flights__company.flights__company--under-ad.flights__company--margin
+                        h2 Бизнес-класс
+                        img(src="./img/6.png", alt="")
+                    .flights__info-start
+                        p Boeing 737
+                        h1 08:40
+                        span 26 мая 2018
+                        h2 Барселона BCN
+                        span Рейс LX - 1245
+                    .flights__time
+                        p 16 ч 20 мин
+                        img(src="./img/buttons.png", alt="")
+                        h3 Париж  FRA
+                    .flights__info-finish.flights__info-finish--margin-top
+                        p Ту - 124
+                        h3 13:30  
+                        span 26 мая 2018
+                        h2 Киев KBP
+                        span Рейс x21 - 63c
+                .flights__byuing
+                    p 29894
+                    button(type="submit" name="buy-ticket" ).flights__btn Купить
+                .col.col-4.offset-4
+                    .flights__accordion-btn
+                        h2 Показать еще 1 билет
+                .flights__info-block
+                    h1 Не нашли подходящие билеты?
+                    p 
+                        | Используйте фильтры чтобы найти билеты быстрее. Выберите 
+                        span количество и время 
+                        | пересадок, 
+                        span время вылета и прилета, 
+                        | нужные 
+                        span агенства и авиакомпании. 
+                

@@ -5,6 +5,9 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title AIR PRO
+        //- UI
+        link(rel="stylesheet", href="./plugins/ui/jquery-ui.min.css")
+        <link rel="stylesheet" href="./plugins/ui/jquery-1.12.4.css">
         <link rel="shortcut icon" href="./img/icon.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         link(rel="stylesheet", href="./css/main.min.css")
@@ -16,4 +19,36 @@ html(lang="en")
         include ../components/Layout/Content/_tips.pug
         include ../components/Layout/Content/_subscribe.pug
         include ../components/Layout/Footer/_footer.pug
-        
+
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        script(type='text/javascript', src='https://code.jquery.com/jquery-3.3.1.min.js')
+        script(src="./plugins/ui/jquery-ui.min.js")
+
+        script.
+            $( function() {
+            $( "#datepicker" ).datepicker();
+            } );
+
+        script.
+            $(function() {
+                $("#js-active-focus ul li a").click(function() {
+                    $("#js-active-focus ul li a").removeClass("avia__link--active");         
+                    $(this).toggleClass("avia__link:focus");
+                })
+            });
+        script.
+            $(function() {
+                $("#js-active-focus ul li a").click(function() {
+                    $("#js-active-focus ul li a").removeClass("");         
+                    $(this).toggleClass("avia__link--active");
+                })
+            });
+        script.
+            document.getElementById("trigger").onclick = function() {
+            open()
+            };
+            function open() {
+            document.getElementById("menu").classList.toggle("show");
+            }

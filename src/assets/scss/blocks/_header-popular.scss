@@ -3,6 +3,10 @@
 $font_0: Open Sans;
 
 
+// body{
+//     background: red;
+// }
+
 .header-vector2-1{
     background-image: url('../img/Vector2-1.png');
     min-height: 692px;
@@ -113,6 +117,68 @@ $font_0: Open Sans;
     }
 }   
 
+#slider-range{
+    width: 69%;
+    margin-left: 25px;
+    margin-top: -17px;
+}
+ 
+
+.offer__info{
+    border-radius: 4px;
+    margin-top: -104px;
+    height: 820px;
+    background: white;
+    width: 100%;
+    margin-top: 35px;
+    // position: sticky;
+    top: 50px;
+    & h3{
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 16px;
+        color: #333333;
+        padding-left: 25px;
+        text-transform: capitalize;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    &--h3-margin{
+        margin-top: -27px;
+    }
+    & input{
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 23px;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 14px;
+        color: #333333;
+    }
+    & label{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        color: #333333;
+    }
+    & hr{
+        margin-left: 23px;
+        padding-right: 13px;
+        width: 87%;
+    }
+}
+
+.accordion{
+    & input{
+        margin-left: -10px;
+    }
+    &--height{
+        height: 116px;
+    }
+}
+
 .header-popular__btn{
     margin-top: 20px;
     background: #57C986;
@@ -180,7 +246,7 @@ $font_0: Open Sans;
     color: white;
 }
 
-.header-popular{
+.offers{
     & h2{
         margin-top: 60px;
         font-family: 'Open Sans', sans-serif;
@@ -192,7 +258,7 @@ $font_0: Open Sans;
     } 
     &__content{
         width: 261px;
-        height: 397px;
+        height: 390px;
         background: white;
         margin-top: 50px;
         margin-left: 32px;
@@ -211,7 +277,7 @@ $font_0: Open Sans;
             text-transform: uppercase;
             color: #FFFFFF;
             padding: 10px;
-            left: 188px;
+            left: 191px;
             top: 12px;
         }
         & img{
@@ -284,6 +350,196 @@ $font_0: Open Sans;
     }
 }
 
+
+
+// PARIS
+.offers__content--paris{
+    margin-top: 35px;
+    & img{
+        width: 262.9px;
+    }
+}
+.offers__card--paris{
+    & h1::after{
+        content: "  Франция";
+    }
+    & p::after{
+        content: " 10 ночей";
+    }
+}
+
+// BERLIN
+.offers__content--berlin{
+    margin-top: 35px;
+    & img{
+        width: 263.6px;
+    }
+}
+.offers__card--berlin{
+    & h1::after{
+        content: "  Германия";
+    }
+    & p::after{
+        content: " 14 ночей";
+    }
+}
+
+// RIM
+
+.offers__content--rim{
+    margin-top: 35px;
+    & img{
+        width: 263.6px;
+    }
+}
+.offers__card--rim{
+    & h1::after{
+        content: "  Италия";
+    }
+    & p::after{
+        content: " 14 ночей";
+    }
+}
+
+// LICCABON
+
+.offers__content--liccabon{
+    margin-top: 130px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--liccabon{
+    & h1::after{
+        content: "  Португалия";
+    }
+    & p::after{
+        content: " 18 ночей";
+    }
+}
+
+// STOKGOLM
+
+.offers__content--stokgolm{
+    margin-top: 35px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--stokgolm{
+    & h1::after{
+        content: "  Швеция";
+    }
+    & p::after{
+        content: " 19 ночей";
+    }
+}
+
+// DYBAI
+
+.offers__content--dybai{
+    margin-top: 35px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--dybai{
+    & h1::after{
+        content: "  ОАЭ";
+    }
+    & p::after{
+        content: " 10 ночей";
+    }
+}
+
+
+// GRACE
+
+.offers__content--grace{
+    margin-top: 35px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--grace{
+    & h1::after{
+        content: "  Греция";
+    }
+    & p::after{
+        content: " 7 ночей";
+    }
+}
+
+
+// BARSELONA
+
+.offers__content--barselona{
+    margin-top: 187px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--barselona{
+    & h1::after{
+        content: "  Испания";
+    }
+    & p::after{
+        content: " 19 ночей";
+    }
+}
+
+// POLAND
+
+.offers__content--poland{
+    margin-top: 35px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--poland{
+    & h1::after{
+        content: "  Польша";
+    }
+    & p::after{
+        content: " 12 ночей";
+    }
+}
+
+
+// LONDON
+
+.offers__content--london{
+    margin-top: 35px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--london{
+    & h1::after{
+        content: "  Великобритания";
+    }
+    & p::after{
+        content: " 3 ночи";
+    }
+}
+
+// TAXI
+
+.offers__content--taxi{
+    margin-top: 35px;
+    & img{
+        width: 262.6px;
+    }
+}
+.offers__card--taxi{
+    & h1::after{
+        content: "  Хорватия";
+    }
+    & p::after{
+        content: " 18 ночей";
+    }
+}
+
 .card__btn{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
@@ -299,191 +555,5 @@ $font_0: Open Sans;
 
 .card__btn:hover{
     background: rgb(209, 124, 50);
-}
-
-
-// LICCABON
-.header-popular__content--liccabon{
-    width: 261px;
-    height: 388px;
-    background: white;
-    margin-top: 134px;
-    margin-left: 32px;
-    position: relative;
-    border: none;
-    border-radius: 4px;
-    & span{
-        position: absolute;
-        background: #C665B2;
-        border-radius: 2px;
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        padding: 10px;
-        left: 188px;
-        top: 12px;
-    }
-    & img{
-        width: 262.9px;
-    }
-}
-.header-popular__card--liccabon{
-    padding-left: 15px;
-    & h1{
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        font-size: 18px;
-        color: #333333;
-    }
-    & h1::after{
-        content: " Португалия";
-        font-weight: normal;
-    }
-    & p{
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 14px;
-        color: #4F4F4F;
-    }
-    & p::after{
-        content: " 18 ночей";
-        color: #57C886;
-    }
-    & h2{
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        font-size: 16px;
-        color: #333333;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    & h2::before{
-        content: "Стоимость: ";
-        font-weight: normal;
-        font-size: 13px;
-    }
-    & h2::after{
-        content: " UAH";
-        font-weight: normal;
-        font-size: 13px;
-    }
-    & h4 {
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 12px;
-        color: #828282;
-        margin-top: 0px;
-    }
-    & button{
-        background: #F2994A;
-        border-radius: 4px;
-        padding: 8px 44px 9px 44px;
-        border: none;
-    }
-}
-
-// BARSELONA
-.header-popular__content--barselona{
-    width: 261px;
-    height: 397px;
-    background: white;
-    margin-top: 188px;
-    margin-left: 32px;
-    position: relative;
-    border: none;
-    border-radius: 4px;
-    & span{
-        position: absolute;
-        background: #C665B2;
-        border-radius: 2px;
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        padding: 10px;
-        left: 188px;
-        top: 12px;
-    }
-    & img{
-        width: 262.1px;
-    }
-}
-.header-popular__card--barselona{
-    padding-left: 15px;
-    & h1{
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        font-size: 18px;
-        color: #333333;
-    }
-    & h1::after{
-        content: " Испания";
-        font-weight: normal;
-    }
-    & p{
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 14px;
-        color: #4F4F4F;
-    }
-    & p::after{
-        content: " 19 ночей";
-        color: #57C886;
-    }
-    & h2{
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        font-size: 16px;
-        color: #333333;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-    & h2::before{
-        content: "Стоимость: ";
-        font-weight: normal;
-        font-size: 13px;
-    }
-    & h2::after{
-        content: " UAH";
-        font-weight: normal;
-        font-size: 13px;
-    }
-    & h4 {
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        line-height: normal;
-        font-size: 12px;
-        color: #828282;
-        margin-top: 0px;
-    }
-    & button{
-        background: #F2994A;
-        border-radius: 4px;
-        padding: 8px 44px 9px 44px;
-        border: none;
-        margin-top: 10px;
-    }
 }
 
