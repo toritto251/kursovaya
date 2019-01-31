@@ -29,9 +29,9 @@
     &__form{
         display: flex;
         justify-content: flex-end;
-        margin-top: -9px;
+        margin-top: -39px;
         & form{
-            margin-top: -21px;
+            margin-top: -39px;
             & input{
                 border-top-left-radius: 9px;
                 border-bottom-left-radius: 9px;
@@ -52,23 +52,24 @@
         }
     }
     &__btn{
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #56CCF2;
-    width: 112px;
-    height: 43px;
-    border: none;
-    cursor: pointer;
-    border-top-right-radius: 9px;
-    border-bottom-right-radius: 9px;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #56CCF2;
+        width: 112px;
+        height: 43px;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 9px;
+        border-bottom-right-radius: 9px;
     }
     &__content{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         & h1{
             font-family: 'Roboto', sans-serif;
@@ -79,13 +80,16 @@
             color: #FFFFFF;
             margin-top: 90px;
         }
+    }
+    &__text{
         & p{
             font-family: 'Lato',sans-serif;
             font-weight: 700;
             font-size: 18px;
             display: flex;
             justify-content: center;
-            margin-top: 29px;
+            margin-top: 0px;
+            color: white;
         }
     }
 }
@@ -98,6 +102,19 @@
     background-color: green;
 }
 .nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    & ul{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        margin-top: -37px;
+        & a{
+            margin-left: 0px;
+        }
+    }
     &__list{
         margin-top: -20px;
         padding-right: 232px;
@@ -117,20 +134,57 @@
         text-decoration: none;
         color: white;
         padding: 26px;
+        &-lang:hover{
+            color: rgb(243, 199, 247);
+        }
     }
-    &__item-lang{
-        padding-left: 90px;
+    &__link-lang{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding-left: 0px;
+        &-lang:hover{
+            color: rgb(243, 199, 247);
     }
 }
-.nav__item-lang {
-    text-decoration: none;
-    color: white;
+    &__link:hover{
+        color: rgb(243, 199, 247);
+    }
 }
 
-.nav__item-lang a {
-    text-decoration: none;
-    color: white;
-}
+  .menu{
+    margin-top: -37px;
+    margin-left: 101px;
+  }
+  
+  @media screen and (max-width:640px) {
+    .menu {
+      display: none;
+    }
+    .trigger {
+      display: inline-block;
+      margin: 3px;
+      cursor: pointer;
+    }
+    .trigger i {
+      display: block;
+      width: 30px;
+      height: 6px;
+      margin: 4px auto;
+      background: #222;
+    }
+    .show {
+      display: block;
+    }
+  }
+
+
+
 
 .avia{
     height: 36px;
@@ -188,7 +242,7 @@
         text-transform: uppercase;
         color: #50546E;
         padding-top: 20px;
-            }
+        display: flex;
     }
     &__place{
         display: flex;
@@ -330,6 +384,7 @@
                 text-transform: capitalize;
                 color: #A4ABB8;
                 cursor: pointer;
+                border: none;
                 &::placeholder{
                     font-family: 'Open Sans', sans-serif;
                     font-style: normal;
@@ -387,6 +442,7 @@
                 text-transform: capitalize;
                 color: #A4ABB8;
                 cursor: pointer;
+                border: none;
                 &::placeholder{
                     font-family: 'Open Sans', sans-serif;
                     font-style: normal;

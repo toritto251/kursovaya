@@ -12,6 +12,52 @@
 
 
 .flights{
+    &--margin{
+        margin-top: 60px;
+        height: 164px;  
+    }
+    &__button{
+        width: 122px;
+        margin-top: 12px;
+        margin-left: 9px;
+        & button{
+            width: 122px;
+            cursor: pointer;
+            padding: 17px 35px 18px 35px;
+            border-radius: 4px;
+            background: #57C986;
+            border: none;
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 23px;
+        }
+        & button:hover{
+            background: rgb(73, 240, 142);
+            border-radius: 4px;
+        }
+        & button:focus{
+            background: rgb(8, 218, 96);
+            border-radius: 4px;
+        }
+        & label{
+            font-family: 'Lato',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            line-height: normal;
+            font-size: 12px;
+            color: #50546E;
+            font-weight: 400;
+            margin-left: -1px;
+        }
+        & input{
+            margin-left: 4px;
+        }
+    }
     & h1,h2 {
         font-family: 'Open Sans', sans-serif;
         font-style: normal;

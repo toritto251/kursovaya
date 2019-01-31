@@ -14,7 +14,9 @@ $font_0: Open Sans;
     background-position: top right;
     margin-top: -2px;
 }
-
+*{
+    list-style: none;
+}
 
 .header {
     &__filter{
@@ -40,7 +42,7 @@ $font_0: Open Sans;
     &__form{
         display: flex;
         justify-content: flex-end;
-        margin-top: -9px;
+        margin-top: -29px;
         & form{
             margin-top: -21px;
             & input{
@@ -160,6 +162,7 @@ $font_0: Open Sans;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         color: #333333;
+        cursor: pointer;
     }
     & hr{
         margin-left: 23px;
@@ -173,7 +176,7 @@ $font_0: Open Sans;
         margin-left: -10px;
     }
     &--height{
-        height: 116px;
+        height: auto;
     }
 }
 
@@ -227,9 +230,6 @@ $font_0: Open Sans;
         text-decoration: none;
         color: white;
         padding: 26px;
-    }
-    &__item-lang{
-        padding-left: 90px;
     }
 }
 

@@ -22,7 +22,57 @@
             form( method="get")
                 input(placeholder="Введите номер телефона")
                 button(type="tel" name="tel" ).header__btn связаться
-        .avia__tablo
+        .row
+            .col.col-10.offset-1
+                .avia__content.flights--margin
+                    .avia__radio#js-active-radio
+                        div
+                            input#radio(type='radio', name='radio' checked)
+                            label(for='radio').qwerty--active В обе стороны
+                        div
+                            input#radio1(type='radio', name='radio')
+                            label(for='radio1') В одну сторону
+                        div
+                            input#radio2(type='radio', name='radio')
+                            label(for='radio2') с пересадками
+                    .avia__place
+                        .avia__whence
+                            h3 Откуда
+                            img(src="./img/plane01.png", alt="")
+                            form(method="get")
+                                input(type="text" placeholder="Киев")
+                            p Аэропорт Борисполь ... (KBP)
+                        .avia__where
+                            h3 куда
+                            img(src="./img/plane02.png", alt="")
+                            form(method="get")
+                                input(type="text" placeholder="Введите название города")
+                            p Аэропорт Борисполь ... (KBP)
+                        .avia__date-there
+                            h3 туда
+                            img(src="./img/calendar.png", alt="")
+                            form(method="get")
+                                input.datepicker(type='text' placeholder='06/05/2019')
+                            p Даты
+                        .avia__date-back
+                            h3 обратно
+                            img(src="./img/calendar.png", alt="")
+                            form(method="get")
+                                input.datepicker(type='text' placeholder='06/05/2019')
+                            p Даты
+                        .avia__class
+                            h3 eco
+                                img(src="./img/chel.png", alt="")
+                                select(name="class" ) 
+                                    option(value="1" selected) 1
+                                    option(value="2") 2
+                                    option(value="3") 3
+                                    option(value="5") 4
+                                    option(value="5") 5
+                            p Класс
+                        .flights__button
+                            form( method="get")
+                                button(type="text" name="search" ).flights__btn поиск
         .row
             .col.col-3 
                 .header__email
@@ -34,30 +84,130 @@
                         button(type="tel" name="tel" ).header-popular__btn Следить за ценой
                 .offer__info
                     h3 Фильтры
-                    input(type="checkbox", name="Only-direct-flights") 
-                    label Только прямые рейсы <br/>
-                    input(type="checkbox", name="Only-with-luggage")
-                    label Только с багажом <br/>
+                    div
+                        input#check-Only-direct-flights(type='checkbox', name='Only-direct-flights')
+                        label(for='check-Only-direct-flights') Только прямые рейсы
+                    div
+                        input#check-Only-with-luggage(type='checkbox', name='Only-with-luggage')
+                        label(for='check-Only-with-luggage') Только с багажом
                     hr
                     h3.offer__info--h3-margin Багаж
-                    input(type="checkbox", name="all-luggage" checked)
-                    label Все <br/>
-                    input(type="checkbox", name="Luggage-not-included" checked)
-                    label Багаж не включен <br/>
-                    input(type="checkbox", name="Luggage-included" checked)
-                    label Багаж включен <br/>
+                    div
+                        input#check-all-luggage(type='checkbox', name='all-luggage' checked)
+                        label(for='check-all-luggage') Все
+                    div
+                        input#check-Luggage-not-included(type='checkbox', name='Luggage-not-included' checked)
+                        label(for='check-Luggage-not-included') Багаж не включен
+                    div
+                        input#check-Luggage-included(type='checkbox', name='Luggage-included' checked)
+                        label(for='check-Luggage-included') Багаж включен
                     hr
                     h3.offer__info--h3-margin Количество пересадок
-                    input(type="checkbox", name="all-transplants" checked)
-                    label Все <br/>
-                    input(type="checkbox", name="Direct-flights" checked)
-                    label Прямые рейсы <br/>
-                    input(type="checkbox", name="1-transfer" checked)
-                    label 1 пересадка <br/>
-                    input(type="checkbox", name="2-or-more-transfer" checked)
-                    label 2 и более <br/>
-                    hr
-                    #accordion  
+                    div
+                        input#check-all-transplants(type='checkbox', name='all-transplants')
+                        label(for='check-all-transplants') Все
+                    div
+                        input#check-Direct-flights(type='checkbox', name='Direct-flights')
+                        label(for='check-Direct-flights') Прямые рейсы
+                    div
+                        input#check-1-transfer(type='checkbox', name='1-transfer' )
+                        label(for='check-1-transfer') 1 пересадка
+                    div
+                        input#check-2-or-more-transfer(type='checkbox', name='2-or-more-transfer' )
+                        label(for='check-2-or-more-transfer') 2 и более
+                    #accordion.accordion
+                        h3 Длительность пересадки
+                        div
+                            div
+                                input#check-1(type='checkbox', name='>1')
+                                label(for='check-1') Меньше 1 часа
+                            div
+                                input#check-3(type='checkbox', name='<3')
+                                label(for='check-3') Больше 1 часа
+                            div
+                                input#check-4(type='checkbox', name='<3' )
+                                label(for='check-4') Больше 3 часов
+                            div.accordion--height
+                                input#check-5(type='checkbox', name='<5' )
+                                label(for='check-5') Больше 5 часов
+                        h3 Время в пути
+                        div
+                            div
+                                input#check3(type='checkbox', name='>3')
+                                label(for='check3') Меньше 3 часов
+                            div
+                                input#check4(type='checkbox', name='<3')
+                                label(for='check4') Больше 3 часов
+                            div
+                                input#check-10(type='checkbox', name='<10' )
+                                label(for='check-10') Больше 10 часов
+                            div.accordion--height
+                                input#check-15(type='checkbox', name='<15' )
+                                label(for='check-15') Больше 15 часов
+                        h3 Авиакомпании
+                        div
+                            div
+                                input#check-Qatar-air(type='checkbox', name='Qatar-air')
+                                label(for='check-Qatar-air') Qatar Airways
+                            div
+                                input#check-Emirates(type='checkbox', name='Emirates')
+                                label(for='check-Emirates') Emirates
+                            div
+                                input#check-Lufthansa(type='checkbox', name='Lufthansa' )
+                                label(for='check-Lufthansa') Lufthansa
+                            div
+                                input#check-Turkish-air(type='checkbox', name='Turkish-air' )
+                                label(for='check-Turkish-air') Turkish-air
+                        h3 Аэропорты
+                        div
+                            div
+                                input#check-Beijing(type='checkbox', name='Beijing')
+                                label(for='check-Beijing') Beijing Capital
+                            div
+                                input#check-Dubai(type='checkbox', name='Dubai')
+                                label(for='check-Dubai') Dubai International
+                            div
+                                input#check-London(type='checkbox', name='London' )
+                                label(for='check-London') London Heathrow
+                            div
+                                input#check-Paris(type='checkbox', name='Paris' )
+                                label(for='check-Paris') Paris Charles de Gaulle
+                        h3 Аэропорт пересадки 
+                        div
+                            div
+                                input#check-New-Yor(type='checkbox', name='New-Yor')
+                                label(for='check-New-Yor') New York JFK
+                            div
+                                input#check-Singapore(type='checkbox', name='Singapore')
+                                label(for='check-Singapore') Singapore Changi
+                            div
+                                input#check-Madrid(type='checkbox', name='Madrid' )
+                                label(for='check-Madrid') 	Madrid Barajas
+                            div
+                                input#check-Barcelona(type='checkbox', name='Barcelona' )
+                                label(for='check-Barcelona') Barcelona	El Prat
+                        h3 Способ оплаты  
+                        div
+                            div
+                                input#check-In-cash(type='checkbox', name='In-cash' )
+                                label(for='check-In-cash') Налиными
+                            div
+                                input#check-By-card(type='checkbox', name='By-card' )
+                                label(for='check-By-card') Картой
+                        h3 Цена билета
+                        div
+                            div
+                                input#check10000(type='checkbox', name='10000' )
+                                label(for='check10000') До 10000 грн.
+                            div
+                                input#check20000(type='checkbox', name='20000' )
+                                label(for='check20000') До 20000 грн.
+                            div
+                                input#check50000(type='checkbox', name='50000' )
+                                label(for='check50000') До 50000 грн.
+                            div
+                                input#check100000(type='checkbox', name='100000' )
+                                label(for='check100000') До 100000 грн.
             .col.col-9  
                 .flights <!-- KYIV-VENA -->
                     h1 Прямые рейсы

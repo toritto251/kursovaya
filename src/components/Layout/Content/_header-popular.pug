@@ -34,112 +34,152 @@
 							button(type="tel" name="tel" ).header-popular__btn Следить за ценой
 					.offer__info
 						h3 Фильтры
-						input(type="checkbox", name="direct-flights") 
-						label Только прямые рейсы <br/>
-						input(type="checkbox", name="weekend")
-						label Только уик-энд <br/>
-						input(type="checkbox", name="immediate-3months")
-						label Вылет  в ближайшие 3 месяца <br/>
-						input(type="checkbox", name="immediate-6months")
-						label Вылет  в ближайшие 6 месяцев <br/>
+						div
+							input#check(type='checkbox', name='direct-flights')
+							label(for='check') Только прямые рейсы
+						div
+							input#check1(type='checkbox', name='weekend')
+							label(for='check1') Только уик-энд
+						div
+							input#check2(type='checkbox', name='immediate-3months')
+							label(for='check2') Вылет  в ближайшие 3 месяца
+						div
+							input#check3(type='checkbox', name='immediate-6months')
+							label(for='check3') Вылет  в ближайшие 6 месяцев
 						hr
 						h3.offer__info--h3-margin Цены
 						p
 							#slider-range(style='background: #89D8F1; height:5px;')
 							label(for='amount')
-							input#amount(type='text', readonly='', style='border:0; padding-left: 41px; color:#f6931f; font-weight:bold;margin-top:10px;')
+							input#amount(type='text', readonly='', style='border:0; color:black; padding-left: 41px; color:#f6931f; font-weight:bold;margin-top:10px;')
 						hr
 						h3.offer__info--h3-margin Страна вылета
-						input(type="checkbox", name="ukraine" checked)
-						label Украина <br/>
-						input(type="checkbox", name="poland")
-						label Польша <br/>
-						input(type="checkbox", name="moldova")
-						label Молдова <br/>
-						input(type="checkbox", name="russia" disabled)
-						label Россия <br/>
+						div
+							input#check-ukraine(type='checkbox', name='ukraine')
+							label(for='check-ukraine') Украина
+						div
+							input#check-poland(type='checkbox', name='poland')
+							label(for='check-poland') Польша
+						div
+							input#check-moldova(type='checkbox', name='moldova')
+							label(for='check-moldova') Молдова
+						div
+							input#check-russia(type='checkbox', name='russia' disabled)
+							label(for='check-russia') Россия
 						hr
 						h3.offer__info--h3-margin Город вылета
-						input(type="checkbox", name="kiev")
-						label Киев <br/>
-						input(type="checkbox", name="odessa")
-						label Одесса <br/>
-						input(type="checkbox", name="Lviv")
-						label Львов <br/>
-						input(type="checkbox", name="zaporizhia")
-						label Запорожье <br/>
-						input(type="checkbox", name="kharkov")
-						label Харьков <br/>
-						hr
+						div
+							input#check-kiev(type='checkbox', name='kiev')
+							label(for='check-kiev') Киев
+						div
+							input#check-odessa(type='checkbox', name='odessa')
+							label(for='check-odessa') Одесса
+						div
+							input#check-Lviv(type='checkbox', name='Lviv')
+							label(for='check-Lviv') Львов
+						div
+							input#check-zaporizhia(type='checkbox', name='zaporizhia' )
+							label(for='check-zaporizhia') Запорожье
+						div
+							input#check-kharkov(type='checkbox', name='kharkov' )
+							label(for='check-kharkov') Харьков
 						#accordion.accordion
 							h3 Длительность поездки
-							div.accordion--height
-								input(type="checkbox", name=">3")
-								label Меньше 3 часов <br/>
-								input(type="checkbox", name="<3")
-								label Больше 3 часов <br/>
-								input(type="checkbox", name="<10")
-								label Больше 10 часов <br/>
-								input(type="checkbox", name="<15")
-								label Больше 15 часов <br/>
+							div
+								div
+									input#check-3(type='checkbox', name='>3')
+									label(for='check-3') Меньше 3 часов
+								div
+									input#check-4(type='checkbox', name='<3')
+									label(for='check-4') Больше 3 часов
+								div
+									input#check-10(type='checkbox', name='<10' )
+									label(for='check-10') Больше 10 часов
+								div.accordion--height
+									input#check-15(type='checkbox', name='<15' )
+									label(for='check-15') Больше 15 часов
 							h3 Месяц вылета
 							div
-								input(type="checkbox", name="January")
-								label Январь <br/>
-								input(type="checkbox", name="February")
-								label Февраль <br/>
-								input(type="checkbox", name="March")
-								label Март <br/>
-								input(type="checkbox", name="April")
-								label Апрель <br/>
-								input(type="checkbox", name="May")
-								label Май <br/>
-								input(type="checkbox", name="June")
-								label Июнь <br/>
-								input(type="checkbox", name="July")
-								label Июль <br/>
-								input(type="checkbox", name="August")
-								label Август <br/>
-								input(type="checkbox", name="September")
-								label Сентябрь <br/>
-								input(type="checkbox", name="October")
-								label Октябрь <br/>
-								input(type="checkbox", name="November")
-								label Ноябрь <br/>
-								input(type="checkbox", name="December")
-								label Декабрь <br/>
+								div
+									input#check-January(type='checkbox', name='January')
+									label(for='check-January') Январь
+								div
+									input#check-February(type='checkbox', name='February')
+									label(for='check-February') Февраль
+								div
+									input#check-March(type='checkbox', name='March' )
+									label(for='check-March') Март
+								div
+									input#check-April(type='checkbox', name='April' )
+									label(for='check-April') Апрель
+								div
+									input#check-May(type='checkbox', name='May')
+									label(for='check-May') Май
+								div
+									input#check-June(type='checkbox', name='June')
+									label(for='check-June') Июнь
+								div
+									input#check-July(type='checkbox', name='July' )
+									label(for='check-July') Июль
+								div
+									input#check-August(type='checkbox', name='August' )
+									label(for='check-August') Август
+								div
+									input#check-September(type='checkbox', name='September')
+									label(for='check-September') Сентябрь
+								div
+									input#check-October(type='checkbox', name='October')
+									label(for='check-October') Октябрь
+								div
+									input#check-November(type='checkbox', name='November' )
+									label(for='check-November') Ноябрь
+								div
+									input#check-December(type='checkbox', name='December' )
+									label(for='check-December') Декабрь
 							h3 Авиакомпании
-							div.accordion--height
-								input(type="checkbox", name="Qatar-air")
-								label Qatar Airways <br/>
-								input(type="checkbox", name="Emirates")
-								label Emirates <br/>
-								input(type="checkbox", name="Lufthansa")
-								label Lufthansa <br/>
-								input(type="checkbox", name="Turkish-air")
-								label Turkish Airlines <br/>
+							div
+								div
+									input#check-Qatar-air(type='checkbox', name='Qatar-air')
+									label(for='check-Qatar-air') Qatar Airways
+								div
+									input#check-Emirates(type='checkbox', name='Emirates')
+									label(for='check-Emirates') Emirates
+								div
+									input#check-Lufthansa(type='checkbox', name='Lufthansa' )
+									label(for='check-Lufthansa') Lufthansa
+								div
+									input#check-Turkish-air(type='checkbox', name='Turkish-air' )
+									label(for='check-Turkish-air') Turkish-air
 							h3 Скидка
-							div.accordion--height
-								input(type="checkbox", name="10%")
-								label 0 - 10% <br/>
-								input(type="checkbox", name="25%")
-								label 11-25% <br/>
-								input(type="checkbox", name="50%")
-								label 26-50% <br/>
-								input(type="checkbox", name="99%")
-								label 51-99% <br/>
+							div
+								div
+									input#check10(type='checkbox', name='10%')
+									label(for='check10') 0 - 10%
+								div
+									input#check11(type='checkbox', name='25%')
+									label(for='check11') 11-25%
+								div
+									input#check50(type='checkbox', name='50%' )
+									label(for='check50') 26-50%
+								div
+									input#check99(type='checkbox', name='99%' )
+									label(for='check99') 51-99%
 							h3 Виза 
-							div.accordion--height
-								input(type="checkbox", name="visa-yes")
-								label Да <br/>
-								input(type="checkbox", name="visa-not")
-								label Нет <br/>
+							div
+								div
+									input#check-visa-yes(type='checkbox', name='visa-yes' )
+									label(for='check-visa-yes') Да
+								div
+									input#check-visa-not(type='checkbox', name='visa-not' )
+									label(for='check-visa-not') Нет
 							h3 Способ оплаты  
-							div.accordion--height
-								input(type="checkbox", name="In-cash")
-								label Налиными <br/>
-								input(type="checkbox", name="By-card")
-								label Картой <br/>
+							div
+								div
+									input#check-In-cash(type='checkbox', name='In-cash' )
+									label(for='check-In-cash') Налиными
+								div
+									input#check-By-card(type='checkbox', name='By-card' )
+									label(for='check-By-card') Картой
 				.col.col-3
 					.offers
 						h2 

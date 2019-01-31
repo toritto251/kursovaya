@@ -5,6 +5,11 @@
 			.header__logo
 				a(href="index.html") AIR PRO
 			.header__nav
+				.nav
+					span#trigger.trigger
+						i
+						i
+						i
 				nav.nav
 					ul.nav__list#menu.menu
 						li.nav__item
@@ -25,7 +30,8 @@
 					button(type="tel" name="tel" ).header__btn связаться
 			.header__content
 				h1 Бронируйте сейчас и получайте бесплатные мили
-					p Поиск дешевых авиабилетов
+			.header__text
+				p Поиск дешевых авиабилетов
 			.header__avia 
 				nav.avia
 				#js-active-focus
@@ -35,17 +41,22 @@
 						li.avia__item
 							a(href="javascript:void(0)").avia__link авиаскидки
 						li.avia__item
-							a(href="javascript:void(0)").avia__link отели со скидкой
+							a(href="javascript:void(0)").avia__link.avia__link--none отели со скидкой
 						li.avia__item
 							a(href="javascript:void(0)").avia__link авиа + отель
 			.row
-				.col.col-10.offset-1
+				.col.col-sm.offset-sm-0.col-10.offset-1
 					.avia__content
-						.avia__radio
-							form(method="get")
-								<input type="radio" name="radio" id="" checked> в обе стороны
-								<input type="radio" name="radio" id="" > в одну сторону
-								<input type="radio" name="radio" id=""> с пересадками
+						.avia__radio#js-active-radio
+							div
+								input#radio(type='radio', name='radio' checked)
+								label(for='radio').qwerty--active В обе стороны
+							div
+								input#radio1(type='radio', name='radio')
+								label(for='radio1') В одну сторону
+							div
+								input#radio2(type='radio', name='radio')
+								label(for='radio2') с пересадками
 						.avia__place
 							.avia__whence
 								h3 Откуда
@@ -82,16 +93,21 @@
 										option(value="5") 5
 								p Класс
 							.avia__button
-								input(type="checkbox", name="sales" checked)
-								label Отели со скидкой
+								div
+									input#check(type='checkbox', name='check')
+									label(for='check') Отели со скидкой
 								form( method="get")
 									button(type="text" name="search" ).aviaes__btn поиск							
 						.avia__check
-							input(type="checkbox", name="low-cost") 
-							label Low cost цены  
-							input(type="checkbox", name="extra-baggage")
-							label Доп. багаж
-							input(type="checkbox", name="insurance")
-							label Страховой полис
-							input(type="checkbox", name="arend-car")
-							label Аренда авто
+							div
+								input#check-low(type='checkbox', name='low')
+								label(for='check-low') low cost цены 
+							div
+								input#check1(type='checkbox', name='check1')
+								label(for='check1') Доп багаж 
+							div
+								input#check2(type='checkbox', name='check2')
+								label(for='check2') Страховой полис
+							div
+								input#check3(type='checkbox', name='check3')
+								label(for='check3') Аренда авто 

@@ -37,10 +37,15 @@
                 font-size: 16px;
                 color: #828282;
             }
+            & h1{
+                display: none;
+            }
     }
     &__foto{
-        height: 260px;
+        height: auto;
+        margin-bottom: 30px;
         & img{
+            width: 100%;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
         }
@@ -48,7 +53,7 @@
             padding: 7px;
             background: orange;
             position: absolute;
-            left: 173px;
+            left: 198px;
             top: 13px;
             border-radius: 2px;
             color: white;
@@ -81,4 +86,31 @@
             border-bottom-right-radius: 5px;
             padding-bottom: 7px;
         }
+        &--paris{
+            & span{
+                top: 322px;
+            }
+        }
+        &--stokgolm{
+            & span{
+                top: 229px;
+            }
+        }
+        &--dybay{
+            & span{
+                top: 534px;
+            }
+        }
+        &--grad{
+            & span{
+                top: 322px;
+            }
+        }
+        &--margin{
+            margin-top: -95px;
+            & span{
+                top: -80px;
+            }
+        }
     }
+}

@@ -55,6 +55,8 @@
         }
     }
     &__content{
+            margin-right: 30px;
+            margin-bottom: 30px;
         & h1{
             position: absolute;
             font-family: 'Open Sans', sans-serif;
@@ -75,6 +77,35 @@
             font-size: 14px;
             color: #FFFFFF;
             left: 34px;
+        }
+        & img{
+            width: 117%;
+            height: 215px;
+        }
+        &--row1{
+            margin-top: 247px;
+            & h1{
+                top: 258px;
+            }
+            & p{
+                top: 270px;
+            }
+        }
+        &--row2{
+            & h1{
+                top: 506px;
+            }
+            & p{
+                top: 519px;
+            }
+        }
+        &--row3{
+            & h1{
+                top: 754px;
+            }
+            & p{
+                top: 767px;
             }
         }
     }
+}
