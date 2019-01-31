@@ -243,6 +243,9 @@
         color: #50546E;
         padding-top: 20px;
         display: flex;
+        & label{
+            cursor: pointer;
+        }
     }
     &__place{
         display: flex;
@@ -550,6 +553,7 @@
             color: #50546E;
             font-weight: 400;
             margin-left: -1px;
+            cursor: pointer;
         }
         & input{
             margin-left: 4px;
@@ -565,6 +569,7 @@
             font-size: 14px;
             text-align: center;
             color: #838EA2;
+            cursor: pointer;
         }
         & input{
             margin-top: 30px;

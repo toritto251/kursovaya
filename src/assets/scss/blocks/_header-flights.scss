@@ -318,6 +318,8 @@
         padding: 14px 47px 14px 60px;
     }
     &__ad{
+        // position: fixed;
+        display: none;
         margin-top: 20px;
         width: 100%;
         background: #FFFFFF;
@@ -367,6 +369,11 @@
                 line-height: normal;
                 font-size: 14px;
                 color: #F2994A;
+                cursor: pointer;
+                text-decoration: none;
+            }
+            & span:hover{
+                text-decoration: underline #F2994A;
             }
         }
         &--watch{
@@ -380,6 +387,10 @@
                 color: #57C986;
                 float: right;
                 padding-right: 34px;
+                cursor: pointer;
+            }
+            & span:hover{
+                color: rgb(92, 238, 153);
             }
         }
     }
@@ -456,4 +467,8 @@
 
 .nav__link--lang{
     color: black;
+}
+
+.flights__ad--block{
+    display: block;
 }

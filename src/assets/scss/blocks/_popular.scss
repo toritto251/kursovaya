@@ -81,6 +81,15 @@
         & img{
             width: 117%;
             height: 215px;
+            -moz-transition: all 1s ease-out;
+            -o-transition: all 1s ease-out;
+            -webkit-transition: all 1s ease-out;
+            cursor: pointer;
+        }
+        & img:hover{
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
         }
         &--row1{
             margin-top: 247px;
