@@ -377,7 +377,7 @@
             }
         }
         &--watch{
-            & span{
+            & a{
                 font-family: 'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: 600;
@@ -388,6 +388,7 @@
                 float: right;
                 padding-right: 34px;
                 cursor: pointer;
+                text-decoration: none;
             }
             & span:hover{
                 color: rgb(92, 238, 153);
