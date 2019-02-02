@@ -42,9 +42,6 @@
         }
         &__content{
             display: block;
-            width: 100%;
-            height: 200px;
-            display: flex;
         }
         &__radio{
             background-color: white;
@@ -131,16 +128,6 @@
             }
             & h2{
                 display: none;
-            }
-            & h1{
-                display: block;
-                font-family: 'Open Sans', sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                line-height: 26px;
-                font-size: 16px;
-                color: #51527E;
-                margin-top: -94px;
             }
         }
         &__foto{
