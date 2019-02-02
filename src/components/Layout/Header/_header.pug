@@ -2,16 +2,25 @@
 .header-vector01
 	.header
 		.container
+			input#hmt.hidden-menu-ticker(type='checkbox')
+			label.btn-menu(for='hmt')
+				span.first
+				span.second
+				span.third
+			ul.hidden-menu
+				li.hidden-menu-item
+					a(href='offers.html').hidden-menu-link УСЛУГИ
+				li.hidden-menu-item
+					a(href='javascript:void(0)').hidden-menu-link МОИ БРОНИРОВАНИЕ
+				li.hidden-menu-item
+					a(href='flights.html').hidden-menu-link РАСПИСАНИЕ РЕЙСОВ
+				li.hidden-menu-item
+					a(href='javascript:void(0)').hidden-menu-link АКЦИИ
 			.header__logo
 				a(href="index.html") AIR PRO
 			.header__nav
-				.nav
-					span#trigger.trigger
-						i
-						i
-						i
 				nav.nav
-					ul.nav__list#menu.menu
+					ul.nav__list
 						li.nav__item
 							a(href="offers.html", title="УСЛУГИ").nav__link УСЛУГИ
 						li.nav__item
@@ -45,10 +54,10 @@
 						li.avia__item
 							a(href="javascript:void(0)").avia__link авиа + отель
 			.row
-				.col.col-10.offset-1.col-sm.col-offset-0
+				.col.col-10.offset-1.col-sm-12.offset-sm-0.col-md-12.offset-md-0.col.col-lg-12.offset-lg-0.col-xl-12.offset-xl-0
 					.avia__content
 						.row
-							.col.col-12.avia--input
+							.col.col-12.col-sm-12.col-md-12.col-lg-12.col-xl-12.avia--input
 								.avia__radio
 									div
 										input#radio(type='radio', name='radio' checked)
@@ -60,39 +69,39 @@
 										input#radio2(type='radio', name='radio')
 										label(for='radio2') с пересадками
 						.row
-							.col.col-6 
+							.col.col-6.col-sm-12.col-md-12.col-lg-12.col-xl-6
 								.row
-									.col-6
+									.col-6.col-sm-12.col-md-6.col-lg-6
 										.avia__whence
 											h3 Откуда
 											img(src="./img/plane01.png", alt="")
 											form(method="get")
 												input(type="text" placeholder="Киев")
 											p Аэропорт Борисполь ... (KBP)
-									.col-6
+									.col-6.col-sm-12.col-md-6.col-lg-6.col-xl-6
 										.avia__where
 											h3 куда
 											img(src="./img/plane02.png", alt="")
 											form(method="get")
 												input(type="text" placeholder="Введите название города")
 											p Аэропорт Борисполь ... (KBP)
-							.col.col-6
+							.col.col-6.col-sm-12.col-md-12.col-lg-12.col-xl-6
 								.row
-									.col.col-3.avia--padding-right
+									.col.col-3.col-sm-4.col.col-md-4.col-lg-3.col-xl-3.avia--padding-right
 										.avia__date-there
 											h3 туда
 											img(src="./img/calendar.png", alt="")
 											form(method="get")
 												input.datepicker(type='text' placeholder='06/05/2019')
 											p Даты
-									.col.col-3.avia--padding-left
+									.col.col-3.col.col-sm-4.col.col-md-4.col-lg-3.col-xl-3.avia--padding-left
 										.avia__date-back
 											h3 обратно
 											img(src="./img/calendar.png", alt="")
 											form(method="get")
 												input.datepicker(type='text' placeholder='06/05/2019')
 											p Даты
-									.col-3
+									.col-3.col-sm-4.col.col-md-4.col-lg-3.col-xl-3.avia--padding-right
 										.avia__class
 											h3 eco
 												img(src="./img/chel.png", alt="")
@@ -103,7 +112,7 @@
 													option(value="5") 4
 													option(value="5") 5
 											p Класс
-									.col-3
+									.col-3.col-sm-12.col-md-12.col-lg-3.col-xl-3
 										.avia__button
 											div
 												input#check(type='checkbox', name='check')

@@ -11,6 +11,7 @@
 
 .tips{
     &__btn{
+        outline: 0;
         margin-top: 40px;
         background: #57C986;
         border-radius: 4px;
@@ -23,6 +24,7 @@
         font-size: 16px;
         color: #FFFFFF;
         cursor: pointer;
+        outline: 0;
     }
     &__btn:hover{
         background: rgb(7, 170, 75);
@@ -81,7 +83,7 @@
             color: #9b8585;
         }
         & img{
-            width: 402px;
+            width: 100%;
         }
 
     }
@@ -127,7 +129,7 @@
             color: #9b8585;
         }
         & img{
-            width: 401.7px;
+            width: 100%;
         }
     }
 }

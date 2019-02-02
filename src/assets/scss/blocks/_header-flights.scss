@@ -302,6 +302,7 @@
             cursor: pointer;
             margin-right: 20px;
             margin-top: -64px;
+            outline: 0;
         }
         & button:hover{
             background: rgb(223, 125, 40);
@@ -472,4 +473,8 @@
 
 .flights__ad--block{
     display: block;
+}
+
+.header-flights--margin{
+    margin-top: 50px;
 }

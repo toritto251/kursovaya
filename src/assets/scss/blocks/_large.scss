@@ -1,0 +1,278 @@
+@media screen and (max-width:  $large) {
+    .vector3 {
+        background-image: url(../img/Vector3.png);
+        min-height: 779px;
+        background-repeat: no-repeat;
+        background-position: left;
+        margin-top: -189px;
+    }
+    .vector02{
+        min-height: 918px;
+    }
+    .vector3{
+        min-height: 656px;
+    }
+    .vector4 {
+        min-height: 800px;
+        margin-top: 40px;
+    }
+    .header{
+        &__form{
+            & form{
+                & input{
+                    display: none;
+                }
+                & button{
+                    border-radius: 4px;
+                }
+            }
+        }
+        &__logo{
+            padding-left: 50px;
+        }
+        & label.btn-menu{
+            display: block;
+            left: 2px;
+        }
+        & label.btn-menu{
+            display: block;
+            width: 6%;
+            background: #5C6BC0;
+        }
+    }
+    .nav{
+        &__item{
+            display: none;
+        }
+        &__item-lang{
+            & a{
+                font-size: 20px;
+            }
+        }
+        &__list{
+            padding-right: 0px;
+        }
+    }
+    .avia{
+        &__content{
+            height: auto;
+        }
+        &--padding-left{
+            padding-left: 0px;
+        }
+        &--padding-right{
+            padding-left: 0px;
+        }
+        &__button{
+            padding-top: 16px;
+            & form{
+                & button{
+                    height: 52px;
+                }
+            }
+        }
+        &__check{
+            padding-bottom: 20px;
+            & label{
+                padding-right: 30px;
+            }
+        }
+        &__link{
+            padding: 4px 15px;
+        }
+        &__list{
+            padding-left: 5px;
+        }
+        &__class{
+            & p{
+                margin-top: 0px;
+            }
+        }
+        &__whence{
+            & form{
+                & input{
+                    width: 80%;
+                }
+            }
+        }
+        &__where{
+            & form{
+                & input{
+                    width: 84%;
+                }
+            }
+        }
+        &__date-there{
+            border-radius: 4px;
+            & form{
+                & input{
+                    margin-left: 41px;
+                }
+            }
+            & img{
+                padding-left: 17px;
+            }
+            & p{
+                margin-left: 16px;
+            }
+        }
+        &__date-back{
+            border-radius: 4px;
+            & form{
+                & input{
+                    margin-left: 41px;
+                }
+            }
+            & p{
+                margin-left: 16px;
+            }
+            & img{
+                padding-left: 17px;
+            }
+        }
+    }
+    .stock{
+        &__popular{
+            margin-top: 0px;
+            margin-bottom: 90px;
+            & p{
+                display: none;
+            }
+        }
+        &__foto{
+            & span{
+                left: 166px;
+            }
+            &--paris{
+                & span{
+                    top: 288px;
+                }
+            }
+            &--stokgolm{
+                & span{
+                    top: 194px;
+                }
+            }
+            &--dybay{
+                & span{
+                    top: 468px;
+                }
+            }
+            &--grad{
+                & span{
+                    top: 288px;
+                }
+            }
+        }
+    }
+    .booking{
+        &__hotel{
+            padding: 30px 20px;
+            margin-top: 20px;
+        }
+        &__search{
+            & P{
+                margin-top: 40px;
+            }
+        }
+        &__button{
+            & button{
+                margin-top: 35px;
+                margin-left: 0px;
+            }
+        }
+    }
+    .popular{
+        &__infos{
+            display: block;
+        }
+        &__info{
+            margin-top: 40px;
+            & button{
+                display: none;
+            }
+            & h1{
+                display: flex;
+                justify-content: center;
+            }
+            & p{
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &__content{
+            margin-top: 0px;
+            margin-right: 15px;
+            margin-bottom: 0px;
+            & img {
+                height: 156px;
+            }
+            &--row1{
+                margin-top: 0px;
+                & h1{
+                    top: 0px;
+                }
+                & p{
+                    top: 12px;
+                }
+            }
+            &--row2{
+                & h1{
+                    top: 156px;
+                }
+                & p{
+                    top: 168px;
+                }
+            }
+            &--row3{
+                & h1{
+                    top: 312px;
+                }
+                & p{
+                    top: 324px;
+                }
+            }
+        }
+        &__btn{
+            margin-left: 0px;
+            margin-top: 20px;
+        }
+    }
+    .tips{
+        &__content2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: auto;
+            & p{
+                & br{
+                    display: none;
+                }
+            }
+        }
+        &__content{
+            height: auto;
+            & p{
+                & br{
+                    display: none;
+                }
+            }
+        }
+        &__btn{
+            margin-top: 20px;
+            margin-left: -30px;
+        }
+    }
+    .footer{
+        min-height: 250px;
+        &__list {
+            display: flex;
+            justify-content: center;
+        }
+        &__social{
+            display: none;
+        }
+        &__conent{
+            display: none;
+        }
+    }
+}

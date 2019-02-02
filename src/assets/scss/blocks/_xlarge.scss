@@ -1,0 +1,158 @@
+@media screen and (max-width: $xlarge) {
+    .header{
+        &__form{
+            & form{
+                & input{
+                    display: none;
+                }
+                & button{
+                    border-radius: 4px;
+                }
+            }
+        }
+        &--burger{
+            display: none;
+        }
+    }
+    .avia{
+        &__whence{
+            & form{
+                & input{
+                    width: 81%;
+                }
+            }
+        }
+        &__where{
+            & form{
+                & input{
+                    width: 81%;
+                    letter-spacing: -1.5px;
+                }
+            }
+        }
+        &--padding-right{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        &--padding-left{
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        &__class{
+            margin-left: 0px;
+            width: 100%;
+            & p{
+                margin-top: 0px;
+            }
+        }
+        &__button{
+            padding-top: 16px;
+            & button{
+                height: 52px;
+                padding: 0;
+                margin-top: 4px;
+            }
+            & label{
+                display: flex;
+                margin-top: -18px;
+                padding-left: 14px;
+            }
+            & input{
+                margin: 0;
+            }
+        }
+        &__list{
+            padding-left: 0px;
+        }
+    }
+    .nav{
+        &__list{
+            padding-right: 45px;
+        }
+    }
+    .stock{
+        &__foto{
+            & p{
+                & br{
+                    display: none;
+                }
+            }
+            & span{
+                left: 120px;
+            }
+            &--paris{
+                & span{
+                    top: 288px;
+                }
+            }
+            &--stokgolm{
+                & span{
+                    top: 194px;
+                }
+            }
+            &--dybay{
+                & span{
+                    top: 468px;
+                }
+            }
+            &--grad{
+                & span{
+                    top: 288px;
+                }
+            }
+        }
+    }
+    .popular{
+        &__info{
+            & p{
+                padding-right: 30px;
+            }
+            & button{
+                margin-left: 0px;
+            }
+        }
+    }
+    .tips{
+        &__content{
+            & p{
+                & br{
+                    display: none;
+                }
+            }
+        }
+        &__content2{
+            & p{
+                & br{
+                    display: none;
+                }
+            }
+        }
+    }
+    .footer{
+        min-height: 250px;
+        &__list {
+            display: flex;
+            justify-content: center;
+        }
+        &__social{
+            display: none;
+        }
+        &__conent{
+            display: none;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1620px) {
+    .header-vector01{
+        background: linear-gradient(120.35deg, #5C6BC0 -9.18%, #7481C8 69.09%);
+        min-height: 763px;
+    }
+    .vector4{
+        min-height: 1200px;
+        margin-top: -104px;
+        background: linear-gradient(120.35deg, #5C6BC0 -9.18%, #7481C8 69.09%);
+    }
+}

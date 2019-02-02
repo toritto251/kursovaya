@@ -4,7 +4,15 @@
 // body{
 //     background-color: green;
 // }
-
+.footer-mobi__content{
+    display: none;
+}
+.footer-mobi__help{
+    display: none;
+}
+.footer-mobi__number{
+    display: none;
+}
 .footer{
     background: rgba(255, 255, 255, 0.8);
     min-height: 242px;
@@ -45,11 +53,16 @@
         float: right;
         margin-top: 50px;
         &--avia{
+            width: 100%;
             float: right;
         }
         &--hotel{
+            width: 100%;
             float: right;
             margin-top: 10px;
+            & button{
+                width: 100%;
+            }
         }
     }
     &__list{
@@ -66,6 +79,9 @@
 }
 
 .avia__btn{
+    outline: 0;
+    width: auto;
+    padding: 18px 46px;
     background: #FA9B46;
     border-radius: 4px;
     border: none;
@@ -96,6 +112,9 @@
 
 
 .hotel__btn{
+    outline: 0;
+    width: auto;
+    padding: 18px 46px;
     background: #56CCF2;
     border-radius: 4px;
     border: none;
@@ -152,4 +171,9 @@
 
 .footer__item + .footer__item {
     padding-left: 15px;
+}
+
+.avia__btn, .hotel__btn {
+    width: auto;
+    padding: 18px 46px;
 }

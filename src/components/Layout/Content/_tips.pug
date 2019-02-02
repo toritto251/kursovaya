@@ -2,10 +2,12 @@
 .vector5
     .tips
         .container
-            .tips__header
-                h1 Советы для путешествий
             .row
-                .col.col-4
+                .col.col-12.col.col-sm-12.col-md-12.col-lg-12
+                    .tips__header
+                        h1 Советы для путешествий
+            .row
+                .col.col-4.col.col-sm-12.col.col-md-12.col-lg-12
                     .tips__content
                         img(src="./img/tips1.png", alt="")
                         h1 Необычная Франция: ТОП-9 мест бретани
@@ -15,7 +17,7 @@
                             |  выбрали для вас самые интересные места<br/>
                             |   региона и объединили их... <br/>
                         a(href="javascript:void(0)") Читать далее
-                .col.col-4
+                .col.col-4.col.col-sm-12.col.col-md-12.col-lg-12
                     .tips__content2
                         img(src="./img/tips2.png", alt="")
                         h1 
@@ -27,7 +29,7 @@
                             | многое. Познать страну пасты и пиццы,<br/>
                             | осознать прелести dolce far niente... <br/>
                         a(href="javascript:void(0)") Читать далее
-                .col.col-4
+                .col.col-4.col.col-sm-12.col.col-md-12.col-lg-12
                     .tips__content
                         img(src="./img/tips3.png", alt="")
                         h1 
@@ -38,4 +40,6 @@
                             | неизведанных, европейских городов. Бордо <br/>
                             | Роттердам, Ноттингем, Бильбао...,<br/>
                         a(href="javascript:void(0)") Читать далее
-            button(type="submit" name="tel" ).tips__btn Читать больше статей в блоге
+            .row
+                .col-sm-12.offset-sm-1.col-md-12.offset-md-1.col-lg-12.offset-lg-1.col-xl-12.offset-xl-0
+                    button(type="submit" name="tel" ).tips__btn Читать больше статей в блоге

@@ -49,20 +49,20 @@
         max-width: (100% / $num-cols * $i);
     }
 }
-@for $i from 1 to $num-cols {
+@for $i from 0 to $num-cols {
     .offset-#{$i} {
         margin-left: (100% / $num-cols * $i);
     }
 }
 
 @media screen and (max-width: $xlarge) {
-    @for $i from 1 to $num-cols + 1 {
+    @for $i from 0 to $num-cols + 1 {
         .col-xl-#{$i} {
             flex: 0 0 (100% / $num-cols * $i);
             max-width: (100% / $num-cols * $i);
         }
     }
-    @for $i from 1 to $num-cols + 1 {
+    @for $i from 0 to $num-cols + 1 {
         .offset-xl-#{$i} {
             margin-left: (100% / $num-cols * $i);
         }
@@ -75,7 +75,7 @@
             max-width: (100% / $num-cols * $i);
         }
     }
-    @for $i from 1 to $num-cols + 1 {
+    @for $i from 0 to $num-cols + 1 {
         .offset-lg-#{$i} {
             margin-left: (100% / $num-cols * $i);
         }
@@ -88,7 +88,7 @@
             max-width: (100% / $num-cols * $i);
         }
     }
-    @for $i from 1 to $num-cols + 1 {
+    @for $i from 0 to $num-cols + 1 {
         .offset-md-#{$i} {
             margin-left: (100% / $num-cols * $i);
         }
@@ -101,7 +101,7 @@
             max-width: (100% / $num-cols * $i);
         }
     }
-    @for $i from 1 to $num-cols + 1 {
+    @for $i from 0 to $num-cols + 1 {
         .offset-sm-#{$i} {
             margin-left: (100% / $num-cols * $i);
         }

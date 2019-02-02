@@ -108,6 +108,7 @@ $font_0: Open Sans;
                 // border: none;
                 margin-top: 0;
                 padding: 14px 12px 14px 39px;
+                outline: 0;
                 color: black;
                 margin-left: 20px;
             }
@@ -192,6 +193,7 @@ $font_0: Open Sans;
     color: #FFFFFF;
     border: none;
     padding: 14px 56px 14px 57px;
+    outline: 0;
 }
 
 .header-popular__btn:hover{
@@ -344,6 +346,7 @@ $font_0: Open Sans;
             border-radius: 4px;
             padding: 8px 44px 9px 44px;
             border: none;
+            outline: 0;
         }
     }
 }

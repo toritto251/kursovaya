@@ -14,10 +14,13 @@
 }
 
 .stock{
+    &__fotoes{
+        display: none;
+    }
     &__popular{
         margin-top: 165px;
-        margin-left: 50px;
-            & h2 {
+            & h2{
+                display: block;
                 font-family: 'Open Sans', sans-serif;
                 font-style: normal;
                 font-weight: 300;
@@ -29,6 +32,22 @@
             }
             & h1{
                 display: none;
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 39px;
+                font-size: 22px;
+                color: #51527E;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+            & p{
+                font-family: 'Open Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 1;
+                font-size: 16px;
+                color: #828282;
             }
     }
     &__foto{
@@ -101,6 +120,9 @@
             & span{
                 top: -80px;
             }
+        }
+        &--spain{
+            display: block;
         }
     }
 }

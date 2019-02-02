@@ -33,7 +33,11 @@
             color: #FCFCFC;
         }
     }
+    &__infos{
+        display: none;
+    }
     &__btn{
+        outline: 0;
         font-family: 'Open Sans', sans-serif;
         font-style: normal;
         font-weight: normal;
@@ -117,4 +121,5 @@
             }
         }
     }
+    
 }

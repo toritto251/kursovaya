@@ -23,7 +23,7 @@ html(lang="en")
         include ../components/Layout/Content/_reviews.pug
         include ../components/Layout/Footer/_footer.pug
 
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        
 
         script(type='text/javascript', src='https://code.jquery.com/jquery-3.3.1.min.js')
         script(type='text/javascript', src='./plugins/slick/slick.min.js')
@@ -61,9 +61,6 @@ html(lang="en")
                         slidesToScroll: 1
                     }
                     }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
                 ]
                 });
         script.
@@ -74,11 +71,11 @@ html(lang="en")
             max: 20000,
             values: [ 550, 20000 ],
             slide: function( event, ui ) {
-            $( "#amount" ).val( "UAH" + ui.values[ 0 ] + " - UAH" + ui.values[ 1 ] );
+            $( "#amount" ).val( "UAH " + ui.values[ 0 ] + " -  UAH" + ui.values[ 1 ] );
             }
             });
-            $( "#amount" ).val( "UAH" + $( "#slider-range" ).slider( "values", 0 ) +
-            " - UAH" + $( "#slider-range" ).slider( "values", 1 ) );
+            $( "#amount" ).val( "UAH " + $( "#slider-range" ).slider( "values", 0 ) +
+            " -  UAH" + $( "#slider-range" ).slider( "values", 1 ) );
             } );
         script.
             $( function() {

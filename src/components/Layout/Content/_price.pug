@@ -2,7 +2,7 @@
     .stock
         .container
             .row
-                .col.col-4.col-sm-12
+                .col.col-4.col.col-sm-12.col-md-12.col-lg-12.col.col-xl-4
                     .stock__popular
                         h1 
                             | Популярные акционные предложения на <br/>
@@ -16,9 +16,9 @@
                         p Киева в Стамбул от 100 $! 
                         p Специальное предложение от 
                         p авиакомпании Turkish Airlines
-                .col.col-8.col-sm-9.offset-sm-0
+                .col.col-8.col-sm-12.offset-sm-0.col-md-12.col-lg-12.offset-lg-0.col.col-xl-8
                     .row
-                        .col.col-4.col-sm-12
+                        .col.col-4.col-sm-12.col-md-6.col.col-lg-4.col.col-xl-4
                             .stock__foto
                                 img(src="./img/foto01.png")
                                 span -75%
@@ -35,7 +35,15 @@
                                     | Из Киева в Париж от 207 €! <br/>
                                     | Специальное предложение от <br/>
                                     | авиакомпании Ukraine Intl <br/>
-                        .col.col-4.col-sm-12
+                            .stock__fotoes.stock__fotoes--spain
+                                img(src="./img/foto03.png")
+                                span -65%
+                                h1 Барселона
+                                p
+                                    | Из Киева в Барселону от 80 €! <br/>
+                                    | Специальное предложение от <br/>
+                                    | авиакомпании RyanAir <br/>
+                        .col.col-4.col-sm-12.col-md-6.col.col-lg-4.col.col-xl-4
                             .stock__foto.stock__foto--margin
                                 img(src="./img/foto02.png")
                                 span -85%
@@ -60,8 +68,8 @@
                                     | Из Киева в Дубай от 206 €! <br/>
                                     | Специальное предложение от <br/>
                                     | авиакомпании Flydubai <br/>
-                        .col.col-4.col-sm-12
-                            .stock__foto
+                        .col.col-4.col-sm-12.col-md-6.col.col-lg-4.col.col-xl-4
+                            .stock__foto.stock__foto--spain
                                 img(src="./img/foto03.png")
                                 span -65%
                                 h1 Барселона
@@ -69,7 +77,7 @@
                                     | Из Киева в Барселону от 80 €! <br/>
                                     | Специальное предложение от <br/>
                                     | авиакомпании RyanAir <br/>
-                            .stock__foto.stock__foto--grad
+                            .stock__foto.stock__foto--grad.stock__foto--none
                                 img(src="./img/foto06.png")
                                 span -33%
                                 h1 Гданьск

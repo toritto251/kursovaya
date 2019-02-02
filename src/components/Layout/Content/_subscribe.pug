@@ -1,9 +1,35 @@
 
 .subscribe
     .container
-        .subscribe__content
-            h1 подпишитесь! 
-            p получайте лучшие педложения на почту 
-            form(action="", method="get")
-                input(type="email", name="email" placeholder="Укажите свой e-mail ") 
-                button(type="email" name="email" ).subscribe__btn Отправить
+        .row
+            .col.col-sm-12
+                .subscribe__content
+                    h1 подпишитесь! <br/>
+                    p получайте лучшие педложения на почту 
+                    form(action="", method="get")
+                        input(type="email", name="email" placeholder="Укажите свой e-mail ") 
+                        button(type="email" name="email" ).subscribe__btn Отправить
+        .row
+            .col.col-sm-12.offset-sm-1
+                .subscribe--mobi
+                    input(type="email", name="email" placeholder="Укажите свой e-mail ") 
+            .col.col-sm-12.offset-sm-1
+                .subscribe--mobi
+                    button(type="email" name="email" ).subscribe__btn Отправить
+            .col.col-sm-12.col.col-md-12
+                .subscribe__nav
+                    nav.nav
+                        ul.footer__list
+                            li.footer__item
+                                a(href="javascript:void(0)").footer__link
+                                    img(src="./img/facebook.png", alt="")
+                            li.footer__item
+                                a(href="javascript:void(0)").footer__link
+                                    img(src="./img/whats.png", alt="")
+                            li.footer__item
+                                a(href="javascript:void(0)").footer__link
+                                    img(src="./img/twitter.png", alt="")
+                            li.footer__item
+                                a(href="javascript:void(0)").footer__link
+                                    img(src="./img/instagram.png", alt="")
+

@@ -10,8 +10,6 @@ html(lang="en")
         link(rel="stylesheet", href="./plugins/ui/jquery-ui.css")
         //- Animate css
         link(rel="stylesheet", href="./plugins/animate-css/animate.css")
-        //- YOUTUBER
-        link(rel="stylesheet", href="./plugins/youtuber/youtuber.css")
         <link rel="shortcut icon" href="./img/icon.png" type="image/png">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         link(rel="stylesheet", href="./css/main.min.css")
@@ -22,13 +20,9 @@ html(lang="en")
 
 
 
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         script(type='text/javascript', src='https://code.jquery.com/jquery-3.3.1.min.js')
         script(src="./plugins/ui/jquery-ui.min.js")
         script(src="./plugins/wow/wow.js")
-        script(src="./plugins/youtuber/youtuber.js")
-        //- script(src="./plugins/youtuber/jquery.js")
 
 
 
@@ -36,10 +30,12 @@ html(lang="en")
             $( function() {
             $( ".datepicker" ).datepicker();
             } );
+
         script.
             $( function() {
             $( "#accordion" ).accordion();
             } );
+
         script.
             $(window).scroll(function (){
                 $(' .mov').each(function (){
@@ -50,6 +46,7 @@ html(lang="en")
                     }
                 });
             });
+            
         script.
             wow = new WOW(
                       {
@@ -61,17 +58,6 @@ html(lang="en")
                     }
                     )
                     wow.init();
-        //- script.
-        //-     $(window).scroll(function() {
-        //-     var height = $(window).scrollTop();
-        //-     /*Если сделали скролл на 100px задаём новый класс для header*/
-        //-     if(height > 5000){
-        //-     $('flights__ad').addClass('flights__ad--block');
-        //-     } else{
-        //-     /*Если меньше 100px удаляем класс для header*/
-        //-     $('header').removeClass('header-fixed');
-        //-     }
-        //-     });
                     
         script(type='text/javascript').
             jQuery(function(f){
